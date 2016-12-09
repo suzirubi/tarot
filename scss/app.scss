@@ -1,0 +1,18 @@
+@import "libraries/bourbon/bourbon.scss";
+@import "libraries/neat/neat.scss";
+@import "_reset.scss";
+@import "_variables.scss";
+@import "_utilities.scss";
+@import "_base.scss";
+@import "_mixins.scss";
+
+#main {
+  @include outer-container();
+  background-color: $color-wildSand;
+}
+
+#nav-row {
+  @include span-columns(12);
+  background-color: $white;
+  border: .5px dashed tomato;
+}

@@ -1,0 +1,10 @@
+
+//from modular treehouse css haven't used yet added $path--rel in variables - same as $path-img
+
+@mixin img-replace($img, $w, $h, $disp: block) {
+ background-image: url('#{$path--rel}/#{$img}');
+ background-repeat: no-repeat;
+ width: $w;
+ height: $h;
+ display: $disp;
+}

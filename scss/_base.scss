@@ -1,0 +1,33 @@
+//Base styles
+
+body {
+  font-size: $base__font-size;
+  line-height: ($base__line/$base__font-size);
+  font-family: $font-family--secondary;
+  font-weight: $font-weight--regularV;
+  background-color: $color-whiteSmoke;
+}
+
+h1 {
+  font-family: $stack-cursive;
+  font-weight: $font-weight--light;
+  font-size: em(42px);
+  line-height: (46px / 42px);
+  margin-bottom: em(70px, 42px);
+	color: palette(grey, x-dark);
+}
+
+h2 {
+  font-family: $stack-serif;
+  font-weight: $font-weight--boldV;
+  font-size: em(24px);
+	color: palette(black, light);
+}
+ul {
+  list-style: none;
+  margin:0;
+  padding: 0;
+  li {
+    display: inline;
+  }
+}

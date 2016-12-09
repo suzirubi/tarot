@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Carrois+Gothic|Ewert|Holtwood+One+SC|Lato:100i,300,300i,400,400i,700,700i,900,900i|Rye|Volkhov:400i,700,700i");
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0; }
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Carrois Gothic", sans-serif;
+  font-weight: 400;
+  background-color: #f4f4f4; }
+
+h1 {
+  font-family: "Rye", cursive;
+  font-weight: 300;
+  font-size: 2.625em;
+  line-height: 1.09524;
+  margin-bottom: 1.66667em;
+  color: #0a0a0a; }
+
+h2 {
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #1a1a1a; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  ul li {
+    display: inline; }
+
+#main {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f6f6f6; }
+  #main::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+#nav-row {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  background-color: #fff;
+  border: .5px dashed tomato; }
+  #nav-row:last-child {
+    margin-right: 0; }
+
+/*# sourceMappingURL=app.css.map */
