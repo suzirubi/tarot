@@ -6,6 +6,7 @@ body {
   font-family: $font-family--secondary;
   font-weight: $font-weight--regularV;
   background-color: $color-whiteSmoke;
+  color: $color-text-base;
 }
 
 h1 {
@@ -13,7 +14,7 @@ h1 {
   font-weight: $font-weight--light;
   font-size: em(42px);
   line-height: (46px / 42px);
-  margin-bottom: em(30px, 42px);
+  margin-bottom: em((42px / 2), 42px);
   color: shade($color-discoPurple,20%);
   text-align: center;
   margin-top: .75em;
@@ -24,9 +25,28 @@ h2 {
   font-size: em(24px);
 	color: palette(black, light);
 }
+h3 {
+  font-family: $stack-cursive-option;
+  font-weight: $font-weight--regular;
+  font-size: em(40px);
+  line-height: (40px / 38px);
+  text-align: center;
+  color: shade($color-discoPurple,20%);
+}
+h5 {
+  font-family: $stack-cursive;
+  font-weight: $font-weight--light;
+  font-size: em(16px);
+  line-height: (16px / 14px);
+  margin-bottom: em((16px / 2), 14px);
+  color: shade($color-discoPurple,20%);
+  text-align: center;
+  margin-top: em(5px);
+  text-transform: capitalize;
+}
 ul {
   list-style: none;
-  margin:0em 0em .5em 0em;
+  margin:0;
   padding: 0;
   text-align: center;
   li {
@@ -34,10 +54,19 @@ ul {
     margin-right: 1em;
     a {
       text-decoration: none;
-      color: $color-text-base;
+      color: shade($color-discoPurple,20%);
+      &:hover {
+        color: tint($color-discoPurple, 20%);
+      }
     }
-  &:nth-child(3n+3) {
-      margin-right: 0;
+    &:nth-child(3n+3) {
+        margin-right: 0;
     }
   }
+}
+
+article {
+  background-color: $color-card-background;
+  border: $border-test-weight dashed $border-test-color;
+  border-radius: $br;
 }

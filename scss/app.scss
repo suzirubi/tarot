@@ -13,6 +13,27 @@
 
 #nav-row {
   @include span-columns(12);
-  background-color: $white;
-  border: .5px dashed tomato;
+  background-color: $orange;
+  border: $border-test-weight dashed $border-test-color;
+}
+div.nav-links {
+  background-color: rgba($grey, 0.10);
+  @include span-columns(12 of 12);
+}
+#card-row {
+  @include span-columns(12);
+  background-color: $color-whiteSmoke;
+  padding: em(20px);
+}
+.card-1 {
+@include span-columns (3 of 12);
+}
+.card-2 {
+@include span-columns (3 of 12);
+}
+.card-3 {
+@include span-columns (3 of 12);
+}
+.card-4 {
+@include span-columns (3 of 12);
 }

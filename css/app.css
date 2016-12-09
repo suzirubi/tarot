@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Carrois+Gothic|Ewert|Holtwood+One+SC|Lato:100i,300,300i,400,400i,700,700i,900,900i|Rye|Volkhov:400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Carrois+Gothic|Ewert|Holtwood+One+SC|Lato:100i,300,300i,400,400i,700,700i,900,900i|Rye|Volkhov:400i,700,700i|Sacramento");
 html {
   box-sizing: border-box; }
 
@@ -15,14 +15,15 @@ body {
   line-height: 1.5;
   font-family: "Carrois Gothic", sans-serif;
   font-weight: 400;
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  color: #333; }
 
 h1 {
   font-family: "Rye", cursive;
   font-weight: 300;
   font-size: 2.625em;
   line-height: 1.09524;
-  margin-bottom: 0.71429em;
+  margin-bottom: 0.5em;
   color: #00456e;
   text-align: center;
   margin-top: .75em; }
@@ -33,9 +34,28 @@ h2 {
   font-size: 1.5em;
   color: #1a1a1a; }
 
+h3 {
+  font-family: "Sacramento", cursive;
+  font-weight: 400;
+  font-size: 2.5em;
+  line-height: 1.05263;
+  text-align: center;
+  color: #00456e; }
+
+h5 {
+  font-family: "Rye", cursive;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.14286;
+  margin-bottom: 0.57143em;
+  color: #00456e;
+  text-align: center;
+  margin-top: 0.3125em;
+  text-transform: capitalize; }
+
 ul {
   list-style: none;
-  margin: 0em 0em .5em 0em;
+  margin: 0;
   padding: 0;
   text-align: center; }
   ul li {
@@ -43,9 +63,16 @@ ul {
     margin-right: 1em; }
     ul li a {
       text-decoration: none;
-      color: #333; }
+      color: #00456e; }
+      ul li a:hover {
+        color: #3378a1; }
     ul li:nth-child(3n+3) {
       margin-right: 0; }
+
+article {
+  background-color: #fff;
+  border: 1px dashed green;
+  border-radius: 3px; }
 
 #main {
   max-width: 1200px;
@@ -62,9 +89,60 @@ ul {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  background-color: #fff;
-  border: .5px dashed tomato; }
+  background-color: orange;
+  border: 1px dashed green; }
   #nav-row:last-child {
+    margin-right: 0; }
+
+div.nav-links {
+  background-color: rgba(51, 51, 51, 0.1);
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  div.nav-links:last-child {
+    margin-right: 0; }
+
+#card-row {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: 1.25em; }
+  #card-row:last-child {
+    margin-right: 0; }
+
+.card-1 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .card-1:last-child {
+    margin-right: 0; }
+
+.card-2 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .card-2:last-child {
+    margin-right: 0; }
+
+.card-3 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .card-3:last-child {
+    margin-right: 0; }
+
+.card-4 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .card-4:last-child {
     margin-right: 0; }
 
 /*# sourceMappingURL=app.css.map */

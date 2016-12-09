@@ -1,3 +1,13 @@
+//REMOVE AFTER TESTING
+
+$border-test-color        : green;
+$border-test-weight       :
+1px;
+
+
+
+
+
 // Descriptive colors
 
 $white              : #fff;
@@ -25,16 +35,24 @@ $color-text-dark    : $black;
 $color-border-light : lighten($grey, 35%);
 $color-border-dark  : $blue;
 
+$color-card-background: $white;
+
 $color-link-default : $orange;
 $color-link-visited : $blue;
 
 $color-shadow       : rgba($black,.8);
 $color-body         : $black;
 
+
+
 // Font stacks
- $font-url--google    : 'https://fonts.googleapis.com/css?family=Carrois+Gothic|Ewert|Holtwood+One+SC|Lato:100i,300,300i,400,400i,700,700i,900,900i|Rye|Volkhov:400i,700,700i';
+ $font-url--google    : 'https://fonts.googleapis.com/css?family=Carrois+Gothic|Ewert|Holtwood+One+SC|Lato:100i,300,300i,400,400i,700,700i,900,900i|Rye|Volkhov:400i,700,700i|Sacramento';
+
+
+
 
 $stack-cursive            : 'Rye', cursive;
+$stack-cursive-option            : 'Sacramento', cursive;
 $stack-sans-serif         : 'Lato', sans-serif;
 $stack-serif              : 'Volkhov', serif;
 $stack-sans-serif-option  : 'Carrois Gothic', sans-serif;
@@ -59,7 +77,7 @@ $font-weight--boldV      : 700;
 
 // Border radius
 
-$br: 10px;
+$br: 3px;
 
 // Asset paths
 // Path to Assets
