@@ -22,8 +22,10 @@ h1 {
   font-weight: 300;
   font-size: 2.625em;
   line-height: 1.09524;
-  margin-bottom: 1.66667em;
-  color: #0a0a0a; }
+  margin-bottom: 0.71429em;
+  color: #00456e;
+  text-align: center;
+  margin-top: .75em; }
 
 h2 {
   font-family: "Volkhov", serif;
@@ -33,10 +35,17 @@ h2 {
 
 ul {
   list-style: none;
-  margin: 0;
-  padding: 0; }
+  margin: 0em 0em .5em 0em;
+  padding: 0;
+  text-align: center; }
   ul li {
-    display: inline; }
+    display: inline;
+    margin-right: 1em; }
+    ul li a {
+      text-decoration: none;
+      color: #333; }
+    ul li:nth-child(3n+3) {
+      margin-right: 0; }
 
 #main {
   max-width: 1200px;

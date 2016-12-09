@@ -13,10 +13,11 @@ h1 {
   font-weight: $font-weight--light;
   font-size: em(42px);
   line-height: (46px / 42px);
-  margin-bottom: em(70px, 42px);
-	color: palette(grey, x-dark);
+  margin-bottom: em(30px, 42px);
+  color: shade($color-discoPurple,20%);
+  text-align: center;
+  margin-top: .75em;
 }
-
 h2 {
   font-family: $stack-serif;
   font-weight: $font-weight--boldV;
@@ -25,9 +26,18 @@ h2 {
 }
 ul {
   list-style: none;
-  margin:0;
+  margin:0em 0em .5em 0em;
   padding: 0;
+  text-align: center;
   li {
     display: inline;
+    margin-right: 1em;
+    a {
+      text-decoration: none;
+      color: $color-text-base;
+    }
+  &:nth-child(3n+3) {
+      margin-right: 0;
+    }
   }
 }
