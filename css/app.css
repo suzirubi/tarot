@@ -197,10 +197,8 @@ div.cards4Wrapper {
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%;
-    background-image: -webkit-radial-gradient(circle, transparent 70%, red 100%), url("../imgs/bk-fool-80.jpg");
-    background-image: radial-gradient(circle, transparent 70%, red 100%), url("../imgs/bk-fool-80.jpg");
     background-size: cover, cover;
-    background-position: center, left;
+    background-position: center, right;
     background-repeat: no-repeat;
     background-color: #fff; }
     div.cards4Wrapper .card-1:last-child,
@@ -217,35 +215,28 @@ div.cards4Wrapper {
       margin-right: 10.1484%;
       width: 100%;
       position: relative;
-      object-fit: 100%;
-      object-position: left;
-      opacity: 0.3;
-      filter: grayscale(100%); }
+      top: 0;
+      width: 80%; }
       div.cards4Wrapper .card-1 img:last-child,
       div.cards4Wrapper .card-2 img:last-child,
       div.cards4Wrapper .card-3 img:last-child,
       div.cards4Wrapper .card-4 img:last-child {
         margin-right: 0; }
-  div.cards4Wrapper .card-2 {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%; }
-    div.cards4Wrapper .card-2:last-child {
-      margin-right: 0; }
-  div.cards4Wrapper .card-3 {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%; }
-    div.cards4Wrapper .card-3:last-child {
-      margin-right: 0; }
-  div.cards4Wrapper .card-4 {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%; }
-    div.cards4Wrapper .card-4:last-child {
-      margin-right: 0; }
+
+.card-1 {
+  background-image: -webkit-radial-gradient(circle, transparent 70%, #063F77 100%), url("../imgs/bk-fool-80.jpg");
+  background-image: radial-gradient(circle, transparent 70%, #063F77 100%), url("../imgs/bk-fool-80.jpg"); }
+
+.card-2 {
+  background-image: -webkit-radial-gradient(circle, transparent 70%, #063F77 100%), url("../imgs/bk-magician-80.jpg");
+  background-image: radial-gradient(circle, transparent 70%, #063F77 100%), url("../imgs/bk-magician-80.jpg"); }
+
+.card-3 {
+  background-image: -webkit-radial-gradient(circle, transparent 70%, #063F77 100%), url("../imgs/bk-priestess-80.jpg");
+  background-image: radial-gradient(circle, transparent 70%, #063F77 100%), url("../imgs/bk-priestess-80.jpg"); }
+
+.card-4 {
+  background-image: -webkit-radial-gradient(circle, transparent 70%, #063F77 100%), url("../imgs/bk-empress-80.jpg");
+  background-image: radial-gradient(circle, transparent 70%, #063F77 100%), url("../imgs/bk-empress-80.jpg"); }
 
 /*# sourceMappingURL=app.css.map */
