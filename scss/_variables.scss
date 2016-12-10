@@ -16,7 +16,7 @@ $grey               : #333;
 
 $red                : red;
 $orange             : orange;
-$blue               : #005689;
+$blue               : #063F77;
 
 $color-lightBlue    : #aadce6;
 $color-wildSand     : #f6f6f6;
@@ -46,13 +46,14 @@ $color-body         : $black;
 
 
 // Font stacks
- $font-url--google    : 'https://fonts.googleapis.com/css?family=Carrois+Gothic|Ewert|Holtwood+One+SC|Lato:100i,300,300i,400,400i,700,700i,900,900i|Rye|Volkhov:400i,700,700i|Sacramento';
+ $font-url--google    : 'https://fonts.googleapis.com/css?family=Carrois+Gothic|Ewert|Holtwood+One+SC|Lato:100i,300,300i,400,400i,700,700i,900,900i|Rye|Volkhov:400i,700,700i|Sacramento|Walter+Turncoat';
 
 
 
 
 $stack-cursive            : 'Rye', cursive;
-$stack-cursive-option            : 'Sacramento', cursive;
+// $stack-cursive-option            : 'Sacramento', cursive;
+$stack-cursive-option            : 'Walter Turncoat', cursive;
 $stack-sans-serif         : 'Lato', sans-serif;
 $stack-serif              : 'Volkhov', serif;
 $stack-sans-serif-option  : 'Carrois Gothic', sans-serif;
@@ -82,8 +83,8 @@ $br: 3px;
 // Asset paths
 // Path to Assets
 
-$path--rel       : "../img";
-$path-img : '../img';
+$path--rel       : "../imgs";
+$path-img : '../imgs';
 $path-font: '../fonts';
 
 // Media queries

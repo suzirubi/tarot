@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Carrois+Gothic|Ewert|Holtwood+One+SC|Lato:100i,300,300i,400,400i,700,700i,900,900i|Rye|Volkhov:400i,700,700i|Sacramento");
+@import url("https://fonts.googleapis.com/css?family=Carrois+Gothic|Ewert|Holtwood+One+SC|Lato:100i,300,300i,400,400i,700,700i,900,900i|Rye|Volkhov:400i,700,700i|Sacramento|Walter+Turncoat");
 html {
   box-sizing: border-box; }
 
@@ -15,7 +15,7 @@ body {
   line-height: 1.5;
   font-family: "Carrois Gothic", sans-serif;
   font-weight: 400;
-  background-color: #f4f4f4;
+  background-color: #292929;
   color: #333; }
 
 h1 {
@@ -34,25 +34,6 @@ h2 {
   font-size: 1.5em;
   color: #1a1a1a; }
 
-h3 {
-  font-family: "Sacramento", cursive;
-  font-weight: 400;
-  font-size: 2.5em;
-  line-height: 1.05263;
-  text-align: center;
-  color: #00456e; }
-
-h5 {
-  font-family: "Rye", cursive;
-  font-weight: 300;
-  font-size: 1em;
-  line-height: 1.14286;
-  margin-bottom: 0.57143em;
-  color: #00456e;
-  text-align: center;
-  margin-top: 0.3125em;
-  text-transform: capitalize; }
-
 ul {
   list-style: none;
   margin: 0;
@@ -69,16 +50,35 @@ ul {
     ul li:nth-child(3n+3) {
       margin-right: 0; }
 
+h3 {
+  font-family: "Walter Turncoat", cursive;
+  font-weight: 300;
+  font-size: 1.125em;
+  line-height: 1;
+  text-align: center;
+  color: red;
+  margin-top: 1.125em; }
+
 article {
   background-color: #fff;
   border: 1px dashed green;
   border-radius: 3px; }
 
+h5 {
+  font-family: "Rye", cursive;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.14286;
+  margin-bottom: 0.57143em;
+  color: #00456e;
+  text-align: center;
+  margin-top: 0.3125em;
+  text-transform: capitalize; }
+
 #main {
   max-width: 1200px;
   margin-left: auto;
-  margin-right: auto;
-  background-color: #f6f6f6; }
+  margin-right: auto; }
   #main::after {
     clear: both;
     content: "";
@@ -108,10 +108,47 @@ div.nav-links {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  background-color: #f4f4f4;
-  padding: 1.25em; }
+  background-image: url("../imgs/starBackground.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #292929;
+  padding: .5em 1em 1em 1em; }
   #card-row:last-child {
     margin-right: 0; }
+
+.headerCards {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  margin-left: 76.76824%;
+  background-image: -webkit-radial-gradient(#063F77 3%, transparent 100%);
+  background-image: radial-gradient(#063F77 3%, transparent 100%);
+  background-size: cover; }
+  .headerCards:last-child {
+    margin-right: 0; }
+  .headerCards .mrMuert {
+    float: left;
+    display: block;
+    margin-right: 10.1484%;
+    width: 26.56773%;
+    padding: 0;
+    margin: 1.5em 0 0 0; }
+    .headerCards .mrMuert:last-child {
+      margin-right: 0; }
+  .headerCards .mrMuertImg {
+    float: left;
+    display: block;
+    margin-right: 10.1484%;
+    width: 63.28387%;
+    position: relative;
+    object-fit: 100%;
+    object-position: left;
+    max-height: 100%;
+    margin: 0 0 0 0; }
+    .headerCards .mrMuertImg:last-child {
+      margin-right: 0; }
 
 .card-1 {
   float: left;

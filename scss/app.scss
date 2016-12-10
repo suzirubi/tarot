@@ -8,7 +8,6 @@
 
 #main {
   @include outer-container();
-  background-color: $color-wildSand;
 }
 
 #nav-row {
@@ -22,8 +21,32 @@ div.nav-links {
 }
 #card-row {
   @include span-columns(12);
-  background-color: $color-whiteSmoke;
-  padding: em(20px);
+  background-image: url("../imgs/starBackground.svg");
+  background-repeat: no-repeat;
+  // background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-color: shade($grey, 20%);
+  padding: .5em 1em 1em 1em;
+}
+.headerCards {
+  @include span-columns (3 of 12);
+  @include shift (9 of 12);
+  @include background-image(radial-gradient($blue 3%, transparent 100%));
+  background-size: cover;
+  .mrMuert {
+    @include span-columns (1 of 3);
+    padding: 0;
+    margin: 1.5em 0 0 0;
+  }
+  .mrMuertImg {
+    @include span-columns (2 of 3);
+    position: relative;
+    object-fit: 100%;
+    object-position: left;
+    max-height: 100%;
+    margin: 0 0 0 0;
+  }
 }
 .card-1 {
 @include span-columns (3 of 12);
