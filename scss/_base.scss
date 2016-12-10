@@ -5,7 +5,7 @@ body {
   line-height: ($base__line/$base__font-size);
   font-family: $font-family--secondary;
   font-weight: $font-weight--regularV;
-  background-color: shade($grey, 20%);
+  background-color: $black;
   color: $color-text-base;
 }
 
@@ -15,7 +15,8 @@ h1 {
   font-size: em(42px);
   line-height: (46px / 42px);
   margin-bottom: em((42px / 2), 42px);
-  color: shade($color-discoPurple,20%);
+  color: $white;
+  -webkit-font-smoothing: antialiased;
   text-align: center;
   margin-top: .75em;
 }
@@ -25,28 +26,23 @@ h2 {
   font-size: em(24px);
 	color: palette(black, light);
 }
-
 ul {
   list-style: none;
   margin:0;
   padding: 0;
-  text-align: center;
   li {
     display: inline;
-    margin-right: 1em;
     a {
       text-decoration: none;
-      color: shade($color-discoPurple,20%);
+      color: $white;
+      -webkit-font-smoothing: antialiased;
+      margin: .5em 1.5em .5em 0em;
       &:hover {
         color: tint($color-discoPurple, 20%);
       }
     }
-    &:nth-child(3n+3) {
-        margin-right: 0;
-    }
   }
 }
-
 h3 {
   font-family: $stack-cursive-option;
   font-weight: $font-weight--light;
@@ -54,6 +50,7 @@ h3 {
   line-height: (18px / 18px);
   text-align: center;
   color: $red;
+  -webkit-font-smoothing: antialiased;
   margin-top: em(18px);
 }
 article {
@@ -61,14 +58,42 @@ article {
   border: $border-test-weight dashed $border-test-color;
   border-radius: $br;
 }
+h4,
 h5 {
   font-family: $stack-cursive;
   font-weight: $font-weight--light;
   font-size: em(16px);
   line-height: (16px / 14px);
-  margin-bottom: em((16px / 2), 14px);
-  color: shade($color-discoPurple,20%);
-  text-align: center;
-  margin-top: em(5px);
+  -webkit-font-smoothing: antialiased;
   text-transform: capitalize;
+  color: $blue;
+  // margin-top: 1em;
+  text-align: right;
+}
+h4  {
+  font-size: em(26px);
+  padding: 0em .75em 0em 0em;
+  margin-bottom: 0;
+}
+h5 {
+  font-family: $stack-serif;
+  background-color: shade($blue, 40%);
+  margin-bottom: 0em;
+  padding: 1em 1.25em 1em 1em;
+  color: $white;
+}
+a {
+  color: shade($blue, 40%);
+  text-decoration: none;
+  position: relative;
+  float:right;
+  margin-top: .5em;
+  margin-right: 1.35em;
+  &:hover {
+    color: $color-lightBlue;
+    text-decoration: underline;
+  }
+  &:after {
+    @include clearfix;
+  }
 }

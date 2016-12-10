@@ -12,27 +12,25 @@
 
 #nav-row {
   @include span-columns(12);
-  background-color: $orange;
-  border: $border-test-weight dashed $border-test-color;
+  background-color: shade($blue,40%);
 }
 div.nav-links {
-  background-color: rgba($grey, 0.10);
+  background-color: shade($blue,50%);
   @include span-columns(12 of 12);
 }
-#card-row {
+#headerCards-row {
   @include span-columns(12);
-  background-image: url("../imgs/starBackground.svg");
-  background-repeat: no-repeat;
-  // background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-color: shade($grey, 20%);
-  padding: .5em 1em 1em 1em;
+  @include background-image(radial-gradient(transparent 0%, $black 100%), url("../imgs/starTile.svg"));
+  background-size: cover, 200px;
+  background-position: cover, left;
+  background-repeat: no-repeat, repeat;
+  background-color: $blue;
+  padding: .5em 2em 1em 2em;
 }
 .headerCards {
   @include span-columns (3 of 12);
   @include shift (9 of 12);
-  @include background-image(radial-gradient($blue 3%, transparent 100%));
+  @include background-image(radial-gradient(ellipse closest-corner at -5em -5em, $white 20%, transparent 100%));
   background-size: cover;
   .mrMuert {
     @include span-columns (1 of 3);
@@ -45,12 +43,34 @@ div.nav-links {
     object-fit: 100%;
     object-position: left;
     max-height: 100%;
+    min-height: 100%;
     margin: 0 0 0 0;
   }
+  &:after {
+    @include clearfix;
+  }
 }
-.card-1 {
-@include span-columns (3 of 12);
-}
+div.cards4Wrapper {
+  @include span-columns(12 of 12);
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4 {
+    @include span-columns (3 of 12);
+    @include background-image(radial-gradient(circle, transparent 70%, $red 100%), url("../imgs/bk-fool-80.jpg"));
+    background-size: cover, cover;
+    background-position: center, left;
+    background-repeat: no-repeat;
+    background-color: $white;
+    img {
+      @include span-columns (3 of 3);
+      position: relative;
+      object-fit: 100%;
+      object-position: left;
+      opacity: 0.3;
+      filter: grayscale(100%);
+    }
+  }
 .card-2 {
 @include span-columns (3 of 12);
 }
@@ -59,4 +79,5 @@ div.nav-links {
 }
 .card-4 {
 @include span-columns (3 of 12);
+}
 }
