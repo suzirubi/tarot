@@ -36,7 +36,7 @@ ul {
       text-decoration: none;
       color: $white;
       -webkit-font-smoothing: antialiased;
-      margin: .5em 1.5em .5em 0em;
+      margin: .5em 1.5em .5em 2em;
       &:hover {
         color: tint($color-discoPurple, 20%);
       }
@@ -54,8 +54,8 @@ h3 {
   margin-top: em(18px);
 }
 article {
-  background-color: $color-card-background;
-  border: $border-test-weight dashed $border-test-color;
+  // background-color: $color-card-background;
+  // border: $border-test-weight dashed $border-test-color;
   border-radius: $br;
 }
 h4,
@@ -76,23 +76,33 @@ h4  {
 }
 h5 {
   font-family: $stack-serif;
-  background-color: shade($blue, 40%);
+  // background-color: shade($blue, 40%);
+  font-size: em(14px);
   margin-bottom: 0em;
-  padding: 1em 1.25em 1em 1em;
+  padding: 1em 1.25em .2em 1em;
   color: $white;
 }
-a {
+div.cards4Wrapper {
+  p {
+    font-size: em(12px);
+  }
+  a {
   color: shade($blue, 40%);
   text-decoration: none;
   position: relative;
   float:right;
-  margin-top: .5em;
+  margin-top: .2em;
   margin-right: 1.35em;
+  color: $white;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: em(10px);
   &:hover {
     color: $color-lightBlue;
     text-decoration: underline;
   }
-  &:after {
-    @include clearfix;
+    &:before,
+    :after {
+      @include clearfix;
+    }
   }
 }

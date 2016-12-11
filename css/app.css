@@ -45,7 +45,7 @@ ul {
       text-decoration: none;
       color: #fff;
       -webkit-font-smoothing: antialiased;
-      margin: .5em 1.5em .5em 0em; }
+      margin: .5em 1.5em .5em 2em; }
       ul li a:hover {
         color: #3378a1; }
 
@@ -55,14 +55,12 @@ h3 {
   font-size: 1.125em;
   line-height: 1;
   text-align: center;
-  color: red;
+  color: #ed1c24;
   -webkit-font-smoothing: antialiased;
   margin-top: 1.125em; }
 
 article {
-  background-color: #fff;
-  border: 1px dashed green;
-  border-radius: 6px; }
+  border-radius: 14px; }
 
 h4,
 h5 {
@@ -72,7 +70,7 @@ h5 {
   line-height: 1.14286;
   -webkit-font-smoothing: antialiased;
   text-transform: capitalize;
-  color: #063F77;
+  color: #113245;
   text-align: right; }
 
 h4 {
@@ -82,28 +80,34 @@ h4 {
 
 h5 {
   font-family: "Volkhov", serif;
-  background-color: #042647;
+  font-size: 0.875em;
   margin-bottom: 0em;
-  padding: 1em 1.25em 1em 1em;
+  padding: 1em 1.25em .2em 1em;
   color: #fff; }
 
-a {
-  color: #042647;
+div.cards4Wrapper p {
+  font-size: 0.75em; }
+div.cards4Wrapper a {
+  color: #0a1e29;
   text-decoration: none;
   position: relative;
   float: right;
-  margin-top: .5em;
-  margin-right: 1.35em; }
-  a:hover {
-    color: #aadce6;
+  margin-top: .2em;
+  margin-right: 1.35em;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 0.625em; }
+  div.cards4Wrapper a:hover {
+    color: #19D8F2;
     text-decoration: underline; }
-  a:after::after {
+  div.cards4Wrapper a:before::after,
+  div.cards4Wrapper a :after::after {
     clear: both;
     content: "";
     display: block; }
 
 #main {
-  max-width: 1200px;
+  max-width: 1920px;
   margin-left: auto;
   margin-right: auto; }
   #main::after {
@@ -116,12 +120,16 @@ a {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  background-color: #042647; }
+  background-color: #0d2634; }
   #nav-row:last-child {
     margin-right: 0; }
+  #nav-row:after::after {
+    clear: both;
+    content: "";
+    display: block; }
 
 div.nav-links {
-  background-color: #03203c;
+  background-color: #0c2330;
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -134,12 +142,12 @@ div.nav-links {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  background-image: -webkit-radial-gradient(transparent 0%, #000 100%), url("../imgs/starTile.svg");
-  background-image: radial-gradient(transparent 0%, #000 100%), url("../imgs/starTile.svg");
-  background-size: cover, 200px;
+  background-image: -webkit-radial-gradient(55em 10em, ellipse closest-corner, transparent 40%, rgba(0, 0, 0, 0.6) 100%), url("../imgs/starTile.svg");
+  background-image: radial-gradient(ellipse closest-corner at 55em 10em, transparent 40%, rgba(0, 0, 0, 0.6) 100%), url("../imgs/starTile.svg");
+  background-size: 100%, 200px;
   background-position: cover, left;
   background-repeat: no-repeat, repeat;
-  background-color: #063F77;
+  background-color: #113245;
   padding: .5em 2em 1em 2em; }
   #headerCards-row:last-child {
     margin-right: 0; }
@@ -192,7 +200,27 @@ div.cards4Wrapper {
   div.cards4Wrapper .card-1,
   div.cards4Wrapper .card-2,
   div.cards4Wrapper .card-3,
-  div.cards4Wrapper .card-4 {
+  div.cards4Wrapper .card-4,
+  div.cards4Wrapper .card-5,
+  div.cards4Wrapper .card-6,
+  div.cards4Wrapper .card-7,
+  div.cards4Wrapper .card-8,
+  div.cards4Wrapper .card-9,
+  div.cards4Wrapper .card-10,
+  div.cards4Wrapper .card-11,
+  div.cards4Wrapper .card-12,
+  div.cards4Wrapper .card-13,
+  div.cards4Wrapper .card-14,
+  div.cards4Wrapper .card-15,
+  div.cards4Wrapper .card-16,
+  div.cards4Wrapper .card-17,
+  div.cards4Wrapper .card-18,
+  div.cards4Wrapper .card-19,
+  div.cards4Wrapper .card-20,
+  div.cards4Wrapper .card-21,
+  div.cards4Wrapper .card-22,
+  div.cards4Wrapper .card-23,
+  div.cards4Wrapper .card-24 {
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -200,43 +228,210 @@ div.cards4Wrapper {
     background-size: cover, cover;
     background-position: center, right;
     background-repeat: no-repeat;
-    background-color: #fff; }
+    background-color: #fff;
+    margin-top: 1em;
+    margin-bottom: 3.125em; }
     div.cards4Wrapper .card-1:last-child,
     div.cards4Wrapper .card-2:last-child,
     div.cards4Wrapper .card-3:last-child,
-    div.cards4Wrapper .card-4:last-child {
+    div.cards4Wrapper .card-4:last-child,
+    div.cards4Wrapper .card-5:last-child,
+    div.cards4Wrapper .card-6:last-child,
+    div.cards4Wrapper .card-7:last-child,
+    div.cards4Wrapper .card-8:last-child,
+    div.cards4Wrapper .card-9:last-child,
+    div.cards4Wrapper .card-10:last-child,
+    div.cards4Wrapper .card-11:last-child,
+    div.cards4Wrapper .card-12:last-child,
+    div.cards4Wrapper .card-13:last-child,
+    div.cards4Wrapper .card-14:last-child,
+    div.cards4Wrapper .card-15:last-child,
+    div.cards4Wrapper .card-16:last-child,
+    div.cards4Wrapper .card-17:last-child,
+    div.cards4Wrapper .card-18:last-child,
+    div.cards4Wrapper .card-19:last-child,
+    div.cards4Wrapper .card-20:last-child,
+    div.cards4Wrapper .card-21:last-child,
+    div.cards4Wrapper .card-22:last-child,
+    div.cards4Wrapper .card-23:last-child,
+    div.cards4Wrapper .card-24:last-child {
       margin-right: 0; }
     div.cards4Wrapper .card-1 img,
     div.cards4Wrapper .card-2 img,
     div.cards4Wrapper .card-3 img,
-    div.cards4Wrapper .card-4 img {
+    div.cards4Wrapper .card-4 img,
+    div.cards4Wrapper .card-5 img,
+    div.cards4Wrapper .card-6 img,
+    div.cards4Wrapper .card-7 img,
+    div.cards4Wrapper .card-8 img,
+    div.cards4Wrapper .card-9 img,
+    div.cards4Wrapper .card-10 img,
+    div.cards4Wrapper .card-11 img,
+    div.cards4Wrapper .card-12 img,
+    div.cards4Wrapper .card-13 img,
+    div.cards4Wrapper .card-14 img,
+    div.cards4Wrapper .card-15 img,
+    div.cards4Wrapper .card-16 img,
+    div.cards4Wrapper .card-17 img,
+    div.cards4Wrapper .card-18 img,
+    div.cards4Wrapper .card-19 img,
+    div.cards4Wrapper .card-20 img,
+    div.cards4Wrapper .card-21 img,
+    div.cards4Wrapper .card-22 img,
+    div.cards4Wrapper .card-23 img,
+    div.cards4Wrapper .card-24 img {
       float: left;
       display: block;
       margin-right: 10.1484%;
       width: 100%;
       position: relative;
       top: 0;
-      width: 80%; }
+      left: 0;
+      width: 85%; }
       div.cards4Wrapper .card-1 img:last-child,
       div.cards4Wrapper .card-2 img:last-child,
       div.cards4Wrapper .card-3 img:last-child,
-      div.cards4Wrapper .card-4 img:last-child {
+      div.cards4Wrapper .card-4 img:last-child,
+      div.cards4Wrapper .card-5 img:last-child,
+      div.cards4Wrapper .card-6 img:last-child,
+      div.cards4Wrapper .card-7 img:last-child,
+      div.cards4Wrapper .card-8 img:last-child,
+      div.cards4Wrapper .card-9 img:last-child,
+      div.cards4Wrapper .card-10 img:last-child,
+      div.cards4Wrapper .card-11 img:last-child,
+      div.cards4Wrapper .card-12 img:last-child,
+      div.cards4Wrapper .card-13 img:last-child,
+      div.cards4Wrapper .card-14 img:last-child,
+      div.cards4Wrapper .card-15 img:last-child,
+      div.cards4Wrapper .card-16 img:last-child,
+      div.cards4Wrapper .card-17 img:last-child,
+      div.cards4Wrapper .card-18 img:last-child,
+      div.cards4Wrapper .card-19 img:last-child,
+      div.cards4Wrapper .card-20 img:last-child,
+      div.cards4Wrapper .card-21 img:last-child,
+      div.cards4Wrapper .card-22 img:last-child,
+      div.cards4Wrapper .card-23 img:last-child,
+      div.cards4Wrapper .card-24 img:last-child {
         margin-right: 0; }
 
 .card-1 {
-  background-image: -webkit-radial-gradient(circle, transparent 70%, #063F77 100%), url("../imgs/bk-fool-80.jpg");
-  background-image: radial-gradient(circle, transparent 70%, #063F77 100%), url("../imgs/bk-fool-80.jpg"); }
+  background-image: -webkit-radial-gradient(6.65em 13.75em, ellipse farthest-corner, transparent 40%, #925800 100%), url("../imgs/bk-fool-80.jpg");
+  background-image: radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, #925800 100%), url("../imgs/bk-fool-80.jpg");
+  border: 4px solid #9e5f00; }
 
 .card-2 {
-  background-image: -webkit-radial-gradient(circle, transparent 70%, #063F77 100%), url("../imgs/bk-magician-80.jpg");
-  background-image: radial-gradient(circle, transparent 70%, #063F77 100%), url("../imgs/bk-magician-80.jpg"); }
+  background-image: -webkit-radial-gradient(6.65em 13.75em, ellipse farthest-corner, transparent 40%, #371b4d 100%), url("../imgs/bk-magician-80.jpg");
+  background-image: radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, #371b4d 100%), url("../imgs/bk-magician-80.jpg");
+  border: 4px solid #301843; }
 
 .card-3 {
-  background-image: -webkit-radial-gradient(circle, transparent 70%, #063F77 100%), url("../imgs/bk-priestess-80.jpg");
-  background-image: radial-gradient(circle, transparent 70%, #063F77 100%), url("../imgs/bk-priestess-80.jpg"); }
+  background-image: -webkit-radial-gradient(7.75em 20.75em, ellipse farthest-corner, transparent 40%, #80B1A1 100%), url("../imgs/bk-priestess-80.jpg");
+  background-image: radial-gradient(ellipse farthest-corner at 7.75em 20.75em, transparent 40%, #80B1A1 100%), url("../imgs/bk-priestess-80.jpg");
+  background-position: center, bottom;
+  border: 4px solid #6d9689; }
 
 .card-4 {
-  background-image: -webkit-radial-gradient(circle, transparent 70%, #063F77 100%), url("../imgs/bk-empress-80.jpg");
-  background-image: radial-gradient(circle, transparent 70%, #063F77 100%), url("../imgs/bk-empress-80.jpg"); }
+  background-image: -webkit-radial-gradient(6.65em 13.75em, ellipse farthest-corner, transparent 30%, #ffff99 100%), url("../imgs/bk-empress-80.jpg");
+  background-image: radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 30%, #ffff99 100%), url("../imgs/bk-empress-80.jpg");
+  background-position: center, bottom;
+  border: 4px solid #d9d900; }
+
+.card-5 {
+  background-image: -webkit-radial-gradient(6.65em 13.75em, ellipse farthest-corner, transparent 40%, #80B1A1 100%), url("../imgs/bk-emperor-80.jpg");
+  background-image: radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, #80B1A1 100%), url("../imgs/bk-emperor-80.jpg");
+  border: 4px solid #108c9d; }
+
+.card-6 {
+  background-image: -webkit-radial-gradient(6.65em 13.75em, ellipse farthest-corner, transparent 40%, #666600 100%), url("../imgs/bk-heirophant-80.jpg");
+  background-image: radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, #666600 100%), url("../imgs/bk-heirophant-80.jpg");
+  border: 4px solid #595900; }
+
+.card-7 {
+  background-image: -webkit-radial-gradient(6.65em 13.75em, ellipse farthest-corner, transparent 40%, #8A44C0 100%), url("../imgs/bk-lover-80.jpg");
+  background-image: radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, #8A44C0 100%), url("../imgs/bk-lover-80.jpg");
+  background-position: center, bottom;
+  border: 4px solid #753aa3; }
+
+.card-8 {
+  background-image: -webkit-radial-gradient(6.65em 13.75em, ellipse farthest-corner, transparent 40%, #A8E2C0 100%), url("../imgs/bk-chariot-80.jpg");
+  background-image: radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, #A8E2C0 100%), url("../imgs/bk-chariot-80.jpg");
+  background-position: center, bottom;
+  border: 4px solid #8fc0a3; }
+
+.card-9 {
+  background-image: -webkit-radial-gradient(6.65em 13.75em, ellipse farthest-corner, transparent 40%, #ed1c24 100%), url("../imgs/bk-strength-80.jpg");
+  background-image: radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, #ed1c24 100%), url("../imgs/bk-strength-80.jpg");
+  border: 4px solid #530a0d; }
+
+.card-10 {
+  background-image: -webkit-radial-gradient(6.65em 13.75em, ellipse farthest-corner, transparent 40%, #174427 100%), url("../imgs/bk-hermit-80.jpg");
+  background-image: radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, #174427 100%), url("../imgs/bk-hermit-80.jpg");
+  border: 4px solid #143c22; }
+
+.card-11 {
+  background-image: -webkit-radial-gradient(6.65em 13.75em, ellipse farthest-corner, transparent 40%, #8A44C0 100%), url("../imgs/bk-wheel-80.jpg");
+  background-image: radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, #8A44C0 100%), url("../imgs/bk-wheel-80.jpg");
+  background-position: center, bottom;
+  border: 4px solid #753aa3; }
+
+.card-12 {
+  background-image: -webkit-radial-gradient(6.65em 13.75em, ellipse farthest-corner, transparent 40%, #A8E2C0 100%), url("../imgs/bk-justice-80.jpg");
+  background-image: radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, #A8E2C0 100%), url("../imgs/bk-justice-80.jpg");
+  background-position: center, bottom;
+  border: 4px solid #8fc0a3; }
+
+.card-13 {
+  background-image: -webkit-radial-gradient(6.65em 13.75em, ellipse farthest-corner, transparent 40%, #613a00 100%), url("../imgs/bk-hangedMan-80.jpg");
+  background-image: radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, #613a00 100%), url("../imgs/bk-hangedMan-80.jpg");
+  border: 4px solid #553300; }
+
+.card-14 {
+  background-image: -webkit-radial-gradient(6.65em 13.75em, ellipse farthest-corner, transparent 40%, #371b4d 100%), url("../imgs/bk-death-80.jpg");
+  background-image: radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, #371b4d 100%), url("../imgs/bk-death-80.jpg");
+  border: 4px solid #301843; }
+
+.card-15 {
+  background-image: -webkit-radial-gradient(6.65em 13.75em, ellipse farthest-corner, transparent 40%, #80B1A1 100%), url("../imgs/bk-temperance-80.jpg");
+  background-image: radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, #80B1A1 100%), url("../imgs/bk-temperance-80.jpg");
+  background-position: center, bottom;
+  border: 4px solid #6d9689; }
+
+.card-16 {
+  background-image: -webkit-radial-gradient(6.65em 16em, ellipse closest-corner, transparent 30%, #ffff66 100%), url("../imgs/bk-devil-80.jpg");
+  background-image: radial-gradient(ellipse closest-corner at 6.65em 16em, transparent 30%, #ffff66 100%), url("../imgs/bk-devil-80.jpg");
+  background-position: center, bottom;
+  border: 4px solid #d9d900; }
+
+.card-17 {
+  background-image: -webkit-radial-gradient(6.65em 13.75em, ellipse farthest-corner, transparent 40%, #80B1A1 100%), url("../imgs/bk-tower-80.jpg");
+  background-image: radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, #80B1A1 100%), url("../imgs/bk-tower-80.jpg");
+  border: 4px solid #108c9d; }
+
+.card-18 {
+  background-image: -webkit-radial-gradient(6.65em 13.75em, ellipse farthest-corner, transparent 40%, #666600 100%), url("../imgs/bk-star-80.jpg");
+  background-image: radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, #666600 100%), url("../imgs/bk-star-80.jpg");
+  border: 4px solid #595900; }
+
+.card-19 {
+  background-image: -webkit-radial-gradient(6.65em 13.75em, ellipse farthest-corner, transparent 40%, #8A44C0 100%), url("../imgs/bk-moon-80.jpg");
+  background-image: radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, #8A44C0 100%), url("../imgs/bk-moon-80.jpg");
+  background-position: center, bottom;
+  border: 4px solid #753aa3; }
+
+.card-20 {
+  background-image: -webkit-radial-gradient(6.65em 13.75em, ellipse farthest-corner, transparent 40%, #A8E2C0 100%), url("../imgs/bk-sun-80.jpg");
+  background-image: radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, #A8E2C0 100%), url("../imgs/bk-sun-80.jpg");
+  background-position: center, bottom;
+  border: 4px solid #8fc0a3; }
+
+.card-21 {
+  background-image: -webkit-radial-gradient(6.65em 13.75em, ellipse farthest-corner, transparent 40%, #ed1c24 100%), url("../imgs/bk-judgement-80.jpg");
+  background-image: radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, #ed1c24 100%), url("../imgs/bk-judgement-80.jpg");
+  border: 4px solid #530a0d; }
+
+.card-22 {
+  background-image: -webkit-radial-gradient(6.65em 13.75em, ellipse farthest-corner, transparent 40%, #174427 100%), url("../imgs/bk-world-80.jpg");
+  background-image: radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, #174427 100%), url("../imgs/bk-world-80.jpg");
+  border: 4px solid #143c22; }
 
 /*# sourceMappingURL=app.css.map */
