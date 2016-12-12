@@ -7,7 +7,7 @@
 @import "_mixins.scss";
 
 #main {
-  @include outer-container(1920px);
+  @include outer-container(1500px);
 }
 
 #nav-row {
@@ -23,9 +23,9 @@ div.nav-links {
 }
 #headerCards-row {
   @include span-columns(12);
-  @include background-image(radial-gradient(ellipse closest-corner at 55em 10em, transparent 40%, rgba($black, 0.6) 100%), url("../imgs/starTile.svg"));
+  @include background-image(radial-gradient(ellipse closest-corner at 72em 10em, transparent 40%, rgba($black, 0.6) 100%), url("../imgs/starTile.svg"));
   background-size: 100%, 200px;
-  background-position: cover, left;
+  background-position:left, left;
   background-repeat: no-repeat, repeat;
   background-color: $blue;
   padding: .5em 2em 1em 2em;
@@ -80,116 +80,125 @@ div.cards4Wrapper {
   .card-23,
   .card-24 {
     @include span-columns (3 of 12);
-    background-size: cover, cover;
-    background-position: center, right;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-color: $white;
-    margin-top: 1em;
+    // margin-top: 1em;
     margin-bottom: em(50px);
     img {
       @include span-columns (3 of 3);
       position: relative;
       top: 0;
       left: 0;
-      width: 85%;
+      width: 75%;
     }
   }
 }
 .card-1 {
-    @include background-image(radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, shade($orange,40%) 100%), url("../imgs/bk-fool-80.jpg"));
-    border: 4px solid shade($orange, 35%);
+      @include background-image(radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, $orange 100%), url("../imgs/bk-fool-80.jpg"));
+    // border: 4px solid shade($orange, 35%);
 }
 .card-2 {
-  @include background-image(radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, shade($color-magicPurple,60%) 100%), url("../imgs/bk-magician-80.jpg"));
-  border: 4px solid shade($color-magicPurple, 65%);
+    @include background-image(radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, shade($color-magicPurple,60%) 100%), url("../imgs/bk-magician-80.jpg"));
 }
+//   border: 4px solid shade($color-magicPurple, 65%);
+// }
 .card-3 {
-    @include background-image(radial-gradient(ellipse farthest-corner at 7.75em 20.75em, transparent 40%, $color-priestessBlue 100%), url("../imgs/bk-priestess-80.jpg"));
-    background-position: center, bottom;
-    border: 4px solid shade($color-priestessBlue, 15%);
+    @include background-image(radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, $color-priestessBlue 100%), url("../imgs/bk-priestess-80.jpg"));
+    background-position: left, bottom;
+    // border: 4px solid shade($color-priestessBlue, 15%);
 }
 .card-4 {
-  @include background-image(radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 30%, tint(yellow,60%) 100%), url("../imgs/bk-empress-80.jpg"));
-  background-position: center, bottom;
-  border: 4px solid shade(yellow, 15%);
+  @include background-image(radial-gradient(ellipse farthest-corner at 9em 15.75em, transparent 40%, shade($color-magicPurple,60%) 100%), url("../imgs/bk-empress-80.jpg"));
+  background-position: right, bottom;
+  // border: 4px solid shade(yellow, 15%);
 }
 .card-5 {
-    @include background-image(radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, $color-priestessBlue 100%), url("../imgs/bk-emperor-80.jpg"));
-    border: 4px solid shade($color-lightBlue,35%);
+    @include background-image(radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 30%, $color-lightBlue 100%), url("../imgs/bk-emperor-80.jpg"));
+    // border: 4px solid shade($color-lightBlue,35%);
 }
 .card-6 {
-  @include background-image(radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, shade(yellow,60%) 100%), url("../imgs/bk-heirophant-80.jpg"));
-  border: 4px solid shade(yellow, 65%);
+    @include background-image(radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 20%, shade(yellow,60%) 100%), url("../imgs/bk-heirophant-80.jpg"));
+}
+.card-6 img {
+  width: 85%;
+  margin-left: 1em;
 }
 .card-7 {
-    @include background-image(radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, $color-magicPurple 100%), url("../imgs/bk-lover-80.jpg"));
+      @include background-image(radial-gradient(ellipse farthest-corner at 9em 12.55em, transparent 20%, $color-magicPurple 100%), url("../imgs/bk-lover-80.jpg"));
     background-position: center, bottom;
-    border: 4px solid shade($color-magicPurple, 15%);
+    // border: 4px solid shade($color-magicPurple, 15%);
 }
 .card-8 {
-  @include background-image(radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, $color-chariotBlue 100%), url("../imgs/bk-chariot-80.jpg"));
+    @include background-image(radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, $color-chariotBlue 100%), url("../imgs/bk-chariot-80.jpg"));
   background-position: center, bottom;
-  border: 4px solid shade($color-chariotBlue, 15%);
 }
+//   border: 4px solid shade($color-chariotBlue, 15%);
+// }
 .card-9 {
-    @include background-image(radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, $red 100%), url("../imgs/bk-strength-80.jpg"));
-    border: 4px solid shade($red, 65%);
+      @include background-image(radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, $red 100%), url("../imgs/bk-strength-80.jpg"));
+    // border: 4px solid shade($red, 65%);
 }
 .card-10 {
-  @include background-image(radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, shade($color-hermitGreen,60%) 100%), url("../imgs/bk-hermit-80.jpg"));
-  border: 4px solid shade($color-hermitGreen, 65%);
+    @include background-image(radial-gradient(ellipse farthest-corner at 8em 10em, transparent 30%, shade($color-hermitGreen,60%) 100%), url("../imgs/bk-hermit-80.jpg"));
+  // border: 4px solid shade($color-hermitGreen, 65%);
+}
+.card-10 img {
+  width: 85%;
+  margin-left: 1em;
 }
 .card-11 {
-    @include background-image(radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, $color-magicPurple 100%), url("../imgs/bk-wheel-80.jpg"));
+      @include background-image(radial-gradient(ellipse farthest-corner at 9em 6em, transparent 40%, $color-magicPurple 100%), url("../imgs/bk-wheel-80.jpg"));
     background-position: center, bottom;
-    border: 4px solid shade($color-magicPurple, 15%);
+    // border: 4px solid shade($color-magicPurple, 15%);
 }
 .card-12 {
-  @include background-image(radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, $color-chariotBlue 100%), url("../imgs/bk-justice-80.jpg"));
+    @include background-image(radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 30%, $color-chariotBlue 100%), url("../imgs/bk-justice-80.jpg"));
   background-position: center, bottom;
-  border: 4px solid shade($color-chariotBlue, 15%);
+  // border: 4px solid shade($color-chariotBlue, 15%);
 }
 .card-13 {
-    @include background-image(radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, shade($orange,60%) 100%), url("../imgs/bk-hangedMan-80.jpg"));
-    border: 4px solid shade($orange, 65%);
+      @include background-image(radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, shade($orange,60%) 100%), url("../imgs/bk-hangedMan-80.jpg"));
+    // border: 4px solid shade($orange, 65%);
 }
 .card-14 {
-  @include background-image(radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, shade($color-magicPurple,60%) 100%), url("../imgs/bk-death-80.jpg"));
-  border: 4px solid shade($color-magicPurple, 65%);
+    @include background-image(radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, shade($color-magicPurple,60%) 100%), url("../imgs/bk-death-80.jpg"));
+  // border: 4px solid shade($color-magicPurple, 65%);
 }
 .card-15 {
-    @include background-image(radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, $color-priestessBlue 100%), url("../imgs/bk-temperance-80.jpg"));
+      @include background-image(radial-gradient(ellipse farthest-corner at 9em 6em, transparent 40%, $color-priestessBlue 100%), url("../imgs/bk-temperance-80.jpg"));
     background-position: center, bottom;
-    border: 4px solid shade($color-priestessBlue, 15%);
+    // border: 4px solid shade($color-priestessBlue, 15%);
 }
 .card-16 {
-  @include background-image(radial-gradient(ellipse closest-corner at 6.65em 16em, transparent 30%, tint(yellow,40%) 100%), url("../imgs/bk-devil-80.jpg"));
+  @include background-image(radial-gradient(ellipse closest-corner at 7em 7em, transparent 40%, $color-lightYellow 100%), url("../imgs/bk-devil-80.jpg"));
   background-position: center, bottom;
-  border: 4px solid shade(yellow, 15%);
+  // border: 4px solid shade(yellow, 15%);
 }
 .card-17 {
-    @include background-image(radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, $color-priestessBlue 100%), url("../imgs/bk-tower-80.jpg"));
-    border: 4px solid shade($color-lightBlue,35%);
+      @include background-image(radial-gradient(ellipse farthest-corner at 6em 9em, transparent 30%, $color-priestessBlue 100%), url("../imgs/bk-tower-80.jpg"));
+    // border: 4px solid shade($color-lightBlue,35%);
 }
 .card-18 {
-  @include background-image(radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, shade(yellow,60%) 100%), url("../imgs/bk-star-80.jpg"));
-  border: 4px solid shade(yellow, 65%);
+    @include background-image(radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, shade($color-starPink,60%) 100%), url("../imgs/bk-star-80.jpg"));
+  // border: 4px solid shade(yellow, 65%);
 }
 .card-19 {
-    @include background-image(radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, $color-magicPurple 100%), url("../imgs/bk-moon-80.jpg"));
+      @include background-image(radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, $color-magicPurple 100%), url("../imgs/bk-moon-80.jpg"));
     background-position: center, bottom;
-    border: 4px solid shade($color-magicPurple, 15%);
+    // border: 4px solid shade($color-magicPurple, 15%);
 }
 .card-20 {
-  @include background-image(radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, $color-chariotBlue 100%), url("../imgs/bk-sun-80.jpg"));
+    @include background-image(radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, $color-chariotBlue 100%), url("../imgs/bk-sun-80.jpg"));
   background-position: center, bottom;
-  border: 4px solid shade($color-chariotBlue, 15%);
+  // border: 4px solid shade($color-chariotBlue, 15%);
 }
 .card-21 {
-    @include background-image(radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, $red 100%), url("../imgs/bk-judgement-80.jpg"));
-    border: 4px solid shade($red, 65%);
+      @include background-image(radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, $red 100%), url("../imgs/bk-judgement-80.jpg"));
+    // border: 4px solid shade($red, 65%);
 }
 .card-22 {
-  @include background-image(radial-gradient(ellipse farthest-corner at 6.65em 13.75em, transparent 40%, shade($color-hermitGreen,60%) 100%), url("../imgs/bk-world-80.jpg"));
-  border: 4px solid shade($color-hermitGreen, 65%);
+    @include background-image(radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, shade($color-hermitGreen,60%) 100%), url("../imgs/bk-world-80.jpg"));
+  // border: 4px solid shade($color-hermitGreen, 65%);
 }
