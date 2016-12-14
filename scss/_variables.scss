@@ -110,9 +110,12 @@ $path-font: '../fonts';
 
 // Media queries
 
-$brk-narrow   : '(max-width: 768px)';
-$brk-medium   : '(max-width:960px)';
-$brk-wide     : '(max-width:)';
+// $brk-narrow   : '(max-width: 768px)';
+// $brk-medium   : '(max-width:960px)';
+// $brk-wide     : '(max-width:1240px)';
+  $mobile: new-breakpoint(max-width 900px);
+
+
 
 // Color Palette Modifiers
 
