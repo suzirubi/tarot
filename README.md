@@ -21,13 +21,13 @@ Use Sass to make code as DRY, organized, and reusable as possible.
 
 
 ##Setup/Installation requirements
-* [visit my gh-page for CSS Independent Project #3](https://suzirubi.github.io/tarot)
-* [visit my gh-page for CSS Independent Project #2](https://suzirubi.github.io/thinkGoogle)
-* [visit my gh-page for CSS Independent Project #1](https://suzirubi.github.io/climbing)
-* [visit my gh-page for Independent Project #4](https://suzirubi.github.io/pizza)
-* [visit my gh-page for Independent Project #3](https://suzirubi.github.io/ping-pong)
-* [Visit my gh page for Indpendent Project #2](https://suzirubi.github.io/Independent-Project-Week-2/)
-* [Visit my gh page for Independent Project #1](https://suzirubi.github.io/portfolioFix/)
+* [visit my gh-page for CSS Independent Project #3](https://rawgit.com/suzirubi/tarot/master/index.html)
+* [visit my gh-page for CSS Independent Project #2](https://rawgit.com/suzirubi/thinkGoogle/master/index.html)
+* [visit my gh-page for CSS Independent Project #1](https://rawgit.com/suzirubi/climbing/master/index.html)
+* [visit my gh-page for Independent Project #4](https://rawgit.com/suzirubi/pizza/master/index.html)
+* [visit my gh-page for Independent Project #3](https://rawgit.com/suzirubi/ping-pong/master/index.html)
+* [Visit my gh page for Indpendent Project #2](https://rawgit.com/suzirubi/Independent-Project-Week-2/master/index.html)
+* [Visit my gh page for Independent Project #1](https://suzirubi.github.io/portfolioFix/master/index.html)
 
 ## Known Bugs
 _* x *_
