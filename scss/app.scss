@@ -8,7 +8,6 @@
 
 .main {
   @include outer-container(1500px);
-
 }
 
 .nav-row {
@@ -18,6 +17,7 @@
     @include clearfix;
   }
 }
+
 div.nav-links {
   background-color: shade($blue,30%);
   @include span-columns(12 of 12);
@@ -26,13 +26,13 @@ div.nav-links {
   @media screen and (max-width:1240px){
     @include background-image(radial-gradient(ellipse closest-corner at 45em 10em, transparent 40%, rgba($black, 0.6) 100%), url("../imgs/starTile.svg"));
   }
-  @include span-columns(12);
+  @include span-columns(12 of 12);
   @include background-image(radial-gradient(ellipse closest-corner at 72em 10em, transparent 40%, rgba($black, 0.6) 100%), url("../imgs/starTile.svg"));
   background-size: 100%, 200px;
   background-position:left, left;
   background-repeat: no-repeat, repeat;
   background-color: $blue;
-  padding: .5em 2em 1em 2em;
+  padding: 2em 2em 1em 2em;
 }
 
 .headerCards {
@@ -70,6 +70,15 @@ div.nav-links {
 
 
 div.cards4Wrapper {
+  @media screen and (min-width: 600px) {
+    padding: 0% 10% 0% 10%;
+  }
+  @media screen and (min-width: 900px) {
+    padding: 0% 5% 0% 10%;
+  }
+  @media screen and (min-width: 1440px) {
+    padding: 0%;
+  }
   @include span-columns(12 of 12);
   .card-1,
   .card-2,
@@ -95,119 +104,256 @@ div.cards4Wrapper {
   .card-22,
   .card-23,
   .card-24 {
-    @include span-columns (3 of 12);
-    @media screen and (max-width:900px) {
-      @include span-columns (6 of 12);
+    position: relative;
+    @media screen and (min-width:600px) {
+      @include span-columns (12 of 12);
+      h2 {
+          font-size: em(50px);
+          line-height: (59px / 50px);
+          margin-top: .125em;
+      }
+      h5 {
+        font-size: em(25px);
+        line-height: (30px / 25px);
+      }
+      padding-bottom: em(20px);
     }
-    background-size: cover;
-    background-position: center;
+    @media screen and (min-width:900px) {
+      @include span-columns (5 of 12);
+      h2 {
+          font-size: em(30px);
+          line-height: (39px / 30px);
+          margin-top: .125em;
+      }
+      h5 {
+        font-size: em(18px);
+        line-height: (22px / 18px);
+      }
+    }
+    @media screen and (min-width:1440px) {
+      @include span-columns (3 of 12);
+      h5 {
+        font-size: em(22px);
+        line-height: (26px / 22px);
+      }
+      height: 500px;
+      margin-left: em(40px);
+    }
+    width: 100%;
+    height: 600px;
+    background-size: 75%, 100%, cover;
+    background-position: left, center, center;
     background-repeat: no-repeat;
     background-color: $white;
-    // margin-top: 1em;
-    margin-bottom: em(50px);
-    img {
-      @include span-columns (3 of 3);
-      position: relative;
-      top: 0;
-      left: 0;
-      width: 75%;
+    padding-bottom: em(15px);
+    margin-left: em(30px);
+    margin-bottom: em(30px);
+    &:hover {
+      height: 1100px;
     }
   }
 }
+.lastCard {
+  @include span-columns (12 of 12);
+}
+
+div.bottomCard {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  span.meaning {
+    a {
+      font-size: .75em;
+      text-decoration: underline;
+      text-align: right;
+    }
+  }
+  h5 {
+    margin:0;
+    padding: 0em 0em 1em 0em;
+    text-align: right;
+  }
+  margin:0;
+  padding:0;
+}
+.back {
+  position: absolute;
+  top:1em;
+  left:0em;
+  z-index: 200;
+  width: 100%;
+  opacity: 0;
+  font-size: 1.25em;
+  line-height: 1.5;
+  font-weight: 700;
+  padding: 1em 1em 1em 1em;
+  &:hover {
+    display: block;
+    color: black;
+    opacity: 100;
+  }
+}
+p.define {
+  font-family: $stack-serif;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  padding: .25em 0em;
+}
+span.bold {
+  font-family: $stack-sans-serif;
+  font-weight: 900;
+}
+.regularText {
+  font-family: $stack-sans-serif;
+  font-weight: 400;
+}
 .card-1 {
-      @include background-image(radial-gradient(ellipse farthest-corner at 6em 8em, transparent 30%, $orange 100%), url("../imgs/bk-fool-80.jpg"));
-    // border: 4px solid shade($orange, 35%);
+      @include background-image(url("../imgs/sk1-fool.svg"), radial-gradient(ellipse farthest-corner at 6em 8em, transparent 30%, $orange 100%), url("../imgs/bk-fool-80.jpg"));
+      &:hover {
+        @include background-image(url(" "), radial-gradient(ellipse farthest-corner at 6em 8em, transparent 0%, $orange 100%), url(" "));
+      }
 }
 .card-2 {
-    @include background-image(radial-gradient(ellipse farthest-corner at 6em 9em, transparent 30%, shade($color-magicPurple,60%) 100%), url("../imgs/bk-magician-80.jpg"));
+    @include background-image(url("../imgs/sk1-magician.svg"), radial-gradient(ellipse farthest-corner at 6em 9em, transparent 30%, shade($color-magicPurple,60%) 100%), url("../imgs/bk-magician-80.jpg"));
+    &:hover {
+      @include background-image(url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, shade($color-magicPurple,60%) 100%), url(" "));
+    }
 }
-//   border: 4px solid shade($color-magicPurple, 65%);
-// }
 .card-3 {
-    @include background-image(radial-gradient(ellipse farthest-corner at 6em 9em, transparent 40%, $color-priestessBlue 100%), url("../imgs/bk-priestess-80.jpg"));
-    background-position: left, bottom;
-    // border: 4px solid shade($color-priestessBlue, 15%);
+      @include background-image(url("../imgs/sk1-priestess.svg"), radial-gradient(ellipse farthest-corner at 6em 9em, transparent 40%, $color-priestessBlue 100%), url("../imgs/bk-priestess-80.jpg"));
+    // background-position: left, bottom;
+    &:hover {
+      @include background-image(url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, $color-priestessBlue 100%), url(" "));
+  }
 }
 .card-4 {
-  @include background-image(radial-gradient(ellipse farthest-corner at 6em 9em, transparent 40%, shade($color-magicPurple,60%) 100%), url("../imgs/bk-empress-80.jpg"));
+  @include background-image(url("../imgs/sk1-empress.svg"), radial-gradient(ellipse farthest-corner at 6em 9em, transparent 40%, shade($color-magicPurple,60%) 100%), url("../imgs/bk-empress-80.jpg"));
   background-position: right, bottom;
-  // border: 4px solid shade(yellow, 15%);
+  &:hover {
+    @include background-image(url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, shade($color-magicPurple,60%) 100%), url(" "));
+  }
+
 }
 .card-5 {
-    @include background-image(radial-gradient(transparent 40%, $color-lightBlue 100%), url("../imgs/bk-emperor-80.jpg"));
-    // border: 4px solid shade($color-lightBlue,35%);
+    @include background-image(url("../imgs/sk1-emperor.svg"), radial-gradient(transparent 40%, $color-lightBlue 100%), url("../imgs/bk-emperor-80.jpg"));
+    &:hover {
+      @include background-image(url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, $color-lightBlue 100%), url(" "));
+    }
 }
 .card-6 {
-    @include background-image(radial-gradient( transparent 20%, shade(yellow,60%) 100%), url("../imgs/bk-heirophant-80.jpg"));
+    @include background-image(url("../imgs/sk1-hierophant.svg"), radial-gradient( transparent 20%, shade(yellow,60%) 100%), url("../imgs/bk-heirophant-80.jpg"));
+    &:hover {
+      @include background-image(url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, shade(yellow,60%) 100%), url(" "));
+    }
 }
 .card-6 img {
   width: 85%;
   margin-left: 1em;
 }
 .card-7 {
-      @include background-image(radial-gradient(transparent 10%, $color-magicPurple 100%), url("../imgs/bk-lover-80.jpg"));
+      @include background-image(url("../imgs/sk1-lovers.svg"), radial-gradient(transparent 10%, $color-magicPurple 100%), url("../imgs/bk-lover-80.jpg"));
     background-position: center, bottom;
-    // border: 4px solid shade($color-magicPurple, 15%);
+    &:hover {
+      @include background-image(url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, $color-magicPurple 100%), url(" "));
+    }
 }
 .card-8 {
-    @include background-image(radial-gradient(transparent 40%, $color-chariotBlue 100%), url("../imgs/bk-chariot-80.jpg"));
+    @include background-image(url("../imgs/sk1-chariot.svg"), radial-gradient(transparent 40%, $color-chariotBlue 100%), url("../imgs/bk-chariot-80.jpg"));
   background-position: center, bottom;
+  &:hover {
+    @include background-image(url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, $color-chariotBlue 100%), url(" "));
+  }
 }
-//   border: 4px solid shade($color-chariotBlue, 15%);
-// }
+
 .card-9 {
-      @include background-image(radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, $red 100%), url("../imgs/bk-strength-80.jpg"));
-    // border: 4px solid shade($red, 65%);
+      @include background-image(url("../imgs/sk1-strength.svg"), radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, $red 100%), url("../imgs/bk-strength-80.jpg"));
+      &:hover {
+        @include background-image(url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, $red 100%), url(" "));
+      }
 }
 .card-10 {
-    @include background-image(radial-gradient(transparent 20%, shade($color-hermitGreen,60%) 100%), url("../imgs/bk-hermit-80.jpg"));
-
+    @include background-image(url("../imgs/sk1-hermit.svg"), radial-gradient(transparent 20%, shade($color-hermitGreen,60%) 100%), url("../imgs/bk-hermit-80.jpg"));
+    &:hover {
+      @include background-image(url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, shade($color-hermitGreen,60%) 100%), url(" "));
+    }
 }
 .card-11 {
-      @include background-image(radial-gradient(transparent 20%, $color-magicPurple 100%), url("../imgs/bk-wheel-80.jpg"));
+      @include background-image(url("../imgs/sk1-wheel.svg"), radial-gradient(transparent 20%, $color-magicPurple 100%), url("../imgs/bk-wheel-80.jpg"));
     background-position: center, bottom;
+    &:hover {
+      @include background-image(url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, $color-magicPurple 100%), url(" "));
+    }
 }
 .card-12 {
-    @include background-image(radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 30%, $color-chariotBlue 100%), url("../imgs/bk-justice-80.jpg"));
+    @include background-image(url("../imgs/sk1-justice.svg"), radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 30%, $color-chariotBlue 100%), url("../imgs/bk-justice-80.jpg"));
   background-position: center, bottom;
+  &:hover {
+    @include background-image(url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, $color-chariotBlue 100%), url(" "));
+  }
 }
 .card-13 {
-      @include background-image(radial-gradient(transparent 20%, shade($orange,60%) 100%), url("../imgs/bk-hangedMan-80.jpg"));
+      @include background-image(url("../imgs/sk1-hangedMan.svg"), radial-gradient(transparent 20%, shade($orange,60%) 100%), url("../imgs/bk-hangedMan-80.jpg"));
+      &:hover {
+        @include background-image(url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, shade($orange,60%) 100%), url(" "));
+      }
 }
 .card-14 {
-    @include background-image(radial-gradient(transparent 20%, shade($color-magicPurple,60%) 100%), url("../imgs/bk-death-80.jpg"));
+    @include background-image(url("../imgs/sk1-death.svg"), radial-gradient(transparent 20%, shade($color-magicPurple,60%) 100%), url("../imgs/bk-death-80.jpg"));
+    &:hover {
+      @include background-image(url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, shade($color-magicPurple,60%) 100%), url(" "));
+    }
 }
 .card-15 {
-      @include background-image(radial-gradient(transparent 20%, $color-priestessBlue 100%), url("../imgs/bk-temperance-80.jpg"));
+      @include background-image(url("../imgs/sk1-temperance.svg"), radial-gradient(transparent 20%, $color-priestessBlue 100%), url("../imgs/bk-temperance-80.jpg"));
     background-position: center, bottom;
+    &:hover {
+      @include background-image(url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, $color-priestessBlue 100%), url(" "));
+    }
 }
 .card-16 {
-  @include background-image(radial-gradient(ellipse closest-corner at 6em 6em, transparent 70%, $color-lightYellow 100%), url("../imgs/bk-devil-80.jpg"));
+  @include background-image(url("../imgs/sk1-devil.svg"), radial-gradient(ellipse closest-corner at 6em 6em, transparent 70%, $color-lightYellow 100%), url("../imgs/bk-devil-80.jpg"));
   background-position: center, bottom;
+  &:hover {
+    @include background-image(url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, $color-lightYellow 100%), url(" "));
+  }
 }
 .card-17 {
-      @include background-image(radial-gradient(ellipse farthest-corner at 6em 9em, transparent 30%, $color-priestessBlue 100%), url("../imgs/bk-tower-80.jpg"));
-    // border: 4px solid shade($color-lightBlue,35%);
+      @include background-image(url("../imgs/sk1-tower.svg"), radial-gradient(ellipse farthest-corner at 6em 9em, transparent 30%, $color-priestessBlue 100%), url("../imgs/bk-tower-80.jpg"));
+      &:hover {
+        @include background-image(url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, $color-priestessBlue 100%), url(" "));
+      }
 }
 .card-18 {
-    @include background-image(radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, shade($color-starPink,60%) 100%), url("../imgs/bk-star-80.jpg"));
-  // border: 4px solid shade(yellow, 65%);
+    @include background-image(url("../imgs/sk1-star.svg"), radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, shade($color-starPink,60%) 100%), url("../imgs/bk-star-80.jpg"));
+    &:hover {
+      @include background-image(url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, shade($color-starPink,60%) 100%), url(" "));
+    }
 }
 .card-19 {
-      @include background-image(radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, $color-magicPurple 100%), url("../imgs/bk-moon-80.jpg"));
+      @include background-image(url("../imgs/sk1-moon.svg"), radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, $color-magicPurple 100%), url("../imgs/bk-moon-80.jpg"));
     background-position: center, bottom;
-    // border: 4px solid shade($color-magicPurple, 15%);
+    &:hover {
+      @include background-image(url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, $color-magicPurple 100%), url(" "));
+    }
 }
 .card-20 {
-    @include background-image(radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, $color-chariotBlue 100%), url("../imgs/bk-sun-80.jpg"));
+    @include background-image(url("../imgs/sk1-sun.svg"), radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, $color-chariotBlue 100%), url("../imgs/bk-sun-80.jpg"));
   background-position: center, bottom;
-  // border: 4px solid shade($color-chariotBlue, 15%);
+  &:hover {
+    @include background-image(url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, $color-chariotBlue 100%), url(" "));
+  }
 }
 .card-21 {
-      @include background-image(radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, $red 100%), url("../imgs/bk-judgement-80.jpg"));
-    // border: 4px solid shade($red, 65%);
+      @include background-image(url("../imgs/sk1-judgement.svg"), radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, $red 100%), url("../imgs/bk-judgement-80.jpg"));
+      &:hover {
+        @include background-image(url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, $red 100%), url(" "));
+      }
 }
 .card-22 {
-    @include background-image(radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, shade($color-hermitGreen,60%) 100%), url("../imgs/bk-world-80.jpg"));
-  // border: 4px solid shade($color-hermitGreen, 65%);
+    @include background-image(url("../imgs/sk1-world.svg"), radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, shade($color-hermitGreen,60%) 100%), url("../imgs/bk-world-80.jpg"));
+    &:hover {
+      @include background-image(url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, shade($color-hermitGreen,60%) 100%), url(" "));
+    }
 }

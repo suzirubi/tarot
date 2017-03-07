@@ -38,14 +38,6 @@ h2 {
   -webkit-font-smoothing: antialiased;
   text-align: center;
   padding: 0; }
-  @media screen and (max-width: 1240px) {
-    h2 {
-      font-size: 1.5em;
-      line-height: 1.33333;
-      margin-bottom: 0.375em; } }
-  @media screen and (max-width: 960px) {
-    h2 {
-      margin-top: .5em; } }
 
 h3 {
   font-family: "Walter Turncoat", cursive;
@@ -63,17 +55,7 @@ h5 {
   line-height: 1.125;
   margin-bottom: 0em;
   text-align: right;
-  padding: 1em 1.25em .2em 1em; }
-  @media screen and (max-width: 1240px) {
-    h5 {
-      font-size: 0.9375em;
-      line-height: 1.2;
-      margin-bottom: 0.23438em; } }
-  @media screen and (max-width: 960px) {
-    h5 {
-      font-size: 0.75em;
-      line-height: 1.08333;
-      margin-bottom: 0.1875em; } }
+  padding: 2em 1.25em 0em 1em; }
 
 .card- > h2 > h5,
 .card-1 {
@@ -230,7 +212,7 @@ div.nav-links {
   background-position: left, left;
   background-repeat: no-repeat, repeat;
   background-color: #113245;
-  padding: .5em 2em 1em 2em; }
+  padding: 2em 2em 1em 2em; }
   @media screen and (max-width: 1240px) {
     .headerCards-row {
       background-image: -webkit-radial-gradient(45em 10em, ellipse closest-corner, transparent 40%, rgba(0, 0, 0, 0.6) 100%), url("../imgs/starTile.svg");
@@ -295,6 +277,15 @@ div.cards4Wrapper {
   display: block;
   margin-right: 2.35765%;
   width: 100%; }
+  @media screen and (min-width: 600px) {
+    div.cards4Wrapper {
+      padding: 0% 10% 0% 10%; } }
+  @media screen and (min-width: 900px) {
+    div.cards4Wrapper {
+      padding: 0% 5% 0% 10%; } }
+  @media screen and (min-width: 1440px) {
+    div.cards4Wrapper {
+      padding: 0%; } }
   div.cards4Wrapper:last-child {
     margin-right: 0; }
   div.cards4Wrapper .card-1,
@@ -321,41 +312,17 @@ div.cards4Wrapper {
   div.cards4Wrapper .card-22,
   div.cards4Wrapper .card-23,
   div.cards4Wrapper .card-24 {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%;
-    background-size: cover;
-    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-size: 75%, 100%, cover;
+    background-position: left, center, center;
     background-repeat: no-repeat;
     background-color: #fff;
-    margin-bottom: 3.125em; }
-    div.cards4Wrapper .card-1:last-child,
-    div.cards4Wrapper .card-2:last-child,
-    div.cards4Wrapper .card-3:last-child,
-    div.cards4Wrapper .card-4:last-child,
-    div.cards4Wrapper .card-5:last-child,
-    div.cards4Wrapper .card-6:last-child,
-    div.cards4Wrapper .card-7:last-child,
-    div.cards4Wrapper .card-8:last-child,
-    div.cards4Wrapper .card-9:last-child,
-    div.cards4Wrapper .card-10:last-child,
-    div.cards4Wrapper .card-11:last-child,
-    div.cards4Wrapper .card-12:last-child,
-    div.cards4Wrapper .card-13:last-child,
-    div.cards4Wrapper .card-14:last-child,
-    div.cards4Wrapper .card-15:last-child,
-    div.cards4Wrapper .card-16:last-child,
-    div.cards4Wrapper .card-17:last-child,
-    div.cards4Wrapper .card-18:last-child,
-    div.cards4Wrapper .card-19:last-child,
-    div.cards4Wrapper .card-20:last-child,
-    div.cards4Wrapper .card-21:last-child,
-    div.cards4Wrapper .card-22:last-child,
-    div.cards4Wrapper .card-23:last-child,
-    div.cards4Wrapper .card-24:last-child {
-      margin-right: 0; }
-    @media screen and (max-width: 900px) {
+    padding-bottom: 0.9375em;
+    margin-left: 1.875em;
+    margin-bottom: 1.875em; }
+    @media screen and (min-width: 600px) {
       div.cards4Wrapper .card-1,
       div.cards4Wrapper .card-2,
       div.cards4Wrapper .card-3,
@@ -383,7 +350,8 @@ div.cards4Wrapper {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 48.82117%; }
+        width: 100%;
+        padding-bottom: 1.25em; }
         div.cards4Wrapper .card-1:last-child,
         div.cards4Wrapper .card-2:last-child,
         div.cards4Wrapper .card-3:last-child,
@@ -408,165 +376,495 @@ div.cards4Wrapper {
         div.cards4Wrapper .card-22:last-child,
         div.cards4Wrapper .card-23:last-child,
         div.cards4Wrapper .card-24:last-child {
-          margin-right: 0; } }
-    div.cards4Wrapper .card-1 img,
-    div.cards4Wrapper .card-2 img,
-    div.cards4Wrapper .card-3 img,
-    div.cards4Wrapper .card-4 img,
-    div.cards4Wrapper .card-5 img,
-    div.cards4Wrapper .card-6 img,
-    div.cards4Wrapper .card-7 img,
-    div.cards4Wrapper .card-8 img,
-    div.cards4Wrapper .card-9 img,
-    div.cards4Wrapper .card-10 img,
-    div.cards4Wrapper .card-11 img,
-    div.cards4Wrapper .card-12 img,
-    div.cards4Wrapper .card-13 img,
-    div.cards4Wrapper .card-14 img,
-    div.cards4Wrapper .card-15 img,
-    div.cards4Wrapper .card-16 img,
-    div.cards4Wrapper .card-17 img,
-    div.cards4Wrapper .card-18 img,
-    div.cards4Wrapper .card-19 img,
-    div.cards4Wrapper .card-20 img,
-    div.cards4Wrapper .card-21 img,
-    div.cards4Wrapper .card-22 img,
-    div.cards4Wrapper .card-23 img,
-    div.cards4Wrapper .card-24 img {
-      float: left;
-      display: block;
-      margin-right: 10.1484%;
-      width: 100%;
-      position: relative;
-      top: 0;
-      left: 0;
-      width: 75%; }
-      div.cards4Wrapper .card-1 img:last-child,
-      div.cards4Wrapper .card-2 img:last-child,
-      div.cards4Wrapper .card-3 img:last-child,
-      div.cards4Wrapper .card-4 img:last-child,
-      div.cards4Wrapper .card-5 img:last-child,
-      div.cards4Wrapper .card-6 img:last-child,
-      div.cards4Wrapper .card-7 img:last-child,
-      div.cards4Wrapper .card-8 img:last-child,
-      div.cards4Wrapper .card-9 img:last-child,
-      div.cards4Wrapper .card-10 img:last-child,
-      div.cards4Wrapper .card-11 img:last-child,
-      div.cards4Wrapper .card-12 img:last-child,
-      div.cards4Wrapper .card-13 img:last-child,
-      div.cards4Wrapper .card-14 img:last-child,
-      div.cards4Wrapper .card-15 img:last-child,
-      div.cards4Wrapper .card-16 img:last-child,
-      div.cards4Wrapper .card-17 img:last-child,
-      div.cards4Wrapper .card-18 img:last-child,
-      div.cards4Wrapper .card-19 img:last-child,
-      div.cards4Wrapper .card-20 img:last-child,
-      div.cards4Wrapper .card-21 img:last-child,
-      div.cards4Wrapper .card-22 img:last-child,
-      div.cards4Wrapper .card-23 img:last-child,
-      div.cards4Wrapper .card-24 img:last-child {
-        margin-right: 0; }
+          margin-right: 0; }
+        div.cards4Wrapper .card-1 h2,
+        div.cards4Wrapper .card-2 h2,
+        div.cards4Wrapper .card-3 h2,
+        div.cards4Wrapper .card-4 h2,
+        div.cards4Wrapper .card-5 h2,
+        div.cards4Wrapper .card-6 h2,
+        div.cards4Wrapper .card-7 h2,
+        div.cards4Wrapper .card-8 h2,
+        div.cards4Wrapper .card-9 h2,
+        div.cards4Wrapper .card-10 h2,
+        div.cards4Wrapper .card-11 h2,
+        div.cards4Wrapper .card-12 h2,
+        div.cards4Wrapper .card-13 h2,
+        div.cards4Wrapper .card-14 h2,
+        div.cards4Wrapper .card-15 h2,
+        div.cards4Wrapper .card-16 h2,
+        div.cards4Wrapper .card-17 h2,
+        div.cards4Wrapper .card-18 h2,
+        div.cards4Wrapper .card-19 h2,
+        div.cards4Wrapper .card-20 h2,
+        div.cards4Wrapper .card-21 h2,
+        div.cards4Wrapper .card-22 h2,
+        div.cards4Wrapper .card-23 h2,
+        div.cards4Wrapper .card-24 h2 {
+          font-size: 3.125em;
+          line-height: 1.18;
+          margin-top: .125em; }
+        div.cards4Wrapper .card-1 h5,
+        div.cards4Wrapper .card-2 h5,
+        div.cards4Wrapper .card-3 h5,
+        div.cards4Wrapper .card-4 h5,
+        div.cards4Wrapper .card-5 h5,
+        div.cards4Wrapper .card-6 h5,
+        div.cards4Wrapper .card-7 h5,
+        div.cards4Wrapper .card-8 h5,
+        div.cards4Wrapper .card-9 h5,
+        div.cards4Wrapper .card-10 h5,
+        div.cards4Wrapper .card-11 h5,
+        div.cards4Wrapper .card-12 h5,
+        div.cards4Wrapper .card-13 h5,
+        div.cards4Wrapper .card-14 h5,
+        div.cards4Wrapper .card-15 h5,
+        div.cards4Wrapper .card-16 h5,
+        div.cards4Wrapper .card-17 h5,
+        div.cards4Wrapper .card-18 h5,
+        div.cards4Wrapper .card-19 h5,
+        div.cards4Wrapper .card-20 h5,
+        div.cards4Wrapper .card-21 h5,
+        div.cards4Wrapper .card-22 h5,
+        div.cards4Wrapper .card-23 h5,
+        div.cards4Wrapper .card-24 h5 {
+          font-size: 1.5625em;
+          line-height: 1.2; } }
+    @media screen and (min-width: 900px) {
+      div.cards4Wrapper .card-1,
+      div.cards4Wrapper .card-2,
+      div.cards4Wrapper .card-3,
+      div.cards4Wrapper .card-4,
+      div.cards4Wrapper .card-5,
+      div.cards4Wrapper .card-6,
+      div.cards4Wrapper .card-7,
+      div.cards4Wrapper .card-8,
+      div.cards4Wrapper .card-9,
+      div.cards4Wrapper .card-10,
+      div.cards4Wrapper .card-11,
+      div.cards4Wrapper .card-12,
+      div.cards4Wrapper .card-13,
+      div.cards4Wrapper .card-14,
+      div.cards4Wrapper .card-15,
+      div.cards4Wrapper .card-16,
+      div.cards4Wrapper .card-17,
+      div.cards4Wrapper .card-18,
+      div.cards4Wrapper .card-19,
+      div.cards4Wrapper .card-20,
+      div.cards4Wrapper .card-21,
+      div.cards4Wrapper .card-22,
+      div.cards4Wrapper .card-23,
+      div.cards4Wrapper .card-24 {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 40.29137%; }
+        div.cards4Wrapper .card-1:last-child,
+        div.cards4Wrapper .card-2:last-child,
+        div.cards4Wrapper .card-3:last-child,
+        div.cards4Wrapper .card-4:last-child,
+        div.cards4Wrapper .card-5:last-child,
+        div.cards4Wrapper .card-6:last-child,
+        div.cards4Wrapper .card-7:last-child,
+        div.cards4Wrapper .card-8:last-child,
+        div.cards4Wrapper .card-9:last-child,
+        div.cards4Wrapper .card-10:last-child,
+        div.cards4Wrapper .card-11:last-child,
+        div.cards4Wrapper .card-12:last-child,
+        div.cards4Wrapper .card-13:last-child,
+        div.cards4Wrapper .card-14:last-child,
+        div.cards4Wrapper .card-15:last-child,
+        div.cards4Wrapper .card-16:last-child,
+        div.cards4Wrapper .card-17:last-child,
+        div.cards4Wrapper .card-18:last-child,
+        div.cards4Wrapper .card-19:last-child,
+        div.cards4Wrapper .card-20:last-child,
+        div.cards4Wrapper .card-21:last-child,
+        div.cards4Wrapper .card-22:last-child,
+        div.cards4Wrapper .card-23:last-child,
+        div.cards4Wrapper .card-24:last-child {
+          margin-right: 0; }
+        div.cards4Wrapper .card-1 h2,
+        div.cards4Wrapper .card-2 h2,
+        div.cards4Wrapper .card-3 h2,
+        div.cards4Wrapper .card-4 h2,
+        div.cards4Wrapper .card-5 h2,
+        div.cards4Wrapper .card-6 h2,
+        div.cards4Wrapper .card-7 h2,
+        div.cards4Wrapper .card-8 h2,
+        div.cards4Wrapper .card-9 h2,
+        div.cards4Wrapper .card-10 h2,
+        div.cards4Wrapper .card-11 h2,
+        div.cards4Wrapper .card-12 h2,
+        div.cards4Wrapper .card-13 h2,
+        div.cards4Wrapper .card-14 h2,
+        div.cards4Wrapper .card-15 h2,
+        div.cards4Wrapper .card-16 h2,
+        div.cards4Wrapper .card-17 h2,
+        div.cards4Wrapper .card-18 h2,
+        div.cards4Wrapper .card-19 h2,
+        div.cards4Wrapper .card-20 h2,
+        div.cards4Wrapper .card-21 h2,
+        div.cards4Wrapper .card-22 h2,
+        div.cards4Wrapper .card-23 h2,
+        div.cards4Wrapper .card-24 h2 {
+          font-size: 1.875em;
+          line-height: 1.3;
+          margin-top: .125em; }
+        div.cards4Wrapper .card-1 h5,
+        div.cards4Wrapper .card-2 h5,
+        div.cards4Wrapper .card-3 h5,
+        div.cards4Wrapper .card-4 h5,
+        div.cards4Wrapper .card-5 h5,
+        div.cards4Wrapper .card-6 h5,
+        div.cards4Wrapper .card-7 h5,
+        div.cards4Wrapper .card-8 h5,
+        div.cards4Wrapper .card-9 h5,
+        div.cards4Wrapper .card-10 h5,
+        div.cards4Wrapper .card-11 h5,
+        div.cards4Wrapper .card-12 h5,
+        div.cards4Wrapper .card-13 h5,
+        div.cards4Wrapper .card-14 h5,
+        div.cards4Wrapper .card-15 h5,
+        div.cards4Wrapper .card-16 h5,
+        div.cards4Wrapper .card-17 h5,
+        div.cards4Wrapper .card-18 h5,
+        div.cards4Wrapper .card-19 h5,
+        div.cards4Wrapper .card-20 h5,
+        div.cards4Wrapper .card-21 h5,
+        div.cards4Wrapper .card-22 h5,
+        div.cards4Wrapper .card-23 h5,
+        div.cards4Wrapper .card-24 h5 {
+          font-size: 1.125em;
+          line-height: 1.22222; } }
+    @media screen and (min-width: 1440px) {
+      div.cards4Wrapper .card-1,
+      div.cards4Wrapper .card-2,
+      div.cards4Wrapper .card-3,
+      div.cards4Wrapper .card-4,
+      div.cards4Wrapper .card-5,
+      div.cards4Wrapper .card-6,
+      div.cards4Wrapper .card-7,
+      div.cards4Wrapper .card-8,
+      div.cards4Wrapper .card-9,
+      div.cards4Wrapper .card-10,
+      div.cards4Wrapper .card-11,
+      div.cards4Wrapper .card-12,
+      div.cards4Wrapper .card-13,
+      div.cards4Wrapper .card-14,
+      div.cards4Wrapper .card-15,
+      div.cards4Wrapper .card-16,
+      div.cards4Wrapper .card-17,
+      div.cards4Wrapper .card-18,
+      div.cards4Wrapper .card-19,
+      div.cards4Wrapper .card-20,
+      div.cards4Wrapper .card-21,
+      div.cards4Wrapper .card-22,
+      div.cards4Wrapper .card-23,
+      div.cards4Wrapper .card-24 {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 23.23176%;
+        height: 500px;
+        margin-left: 2.5em; }
+        div.cards4Wrapper .card-1:last-child,
+        div.cards4Wrapper .card-2:last-child,
+        div.cards4Wrapper .card-3:last-child,
+        div.cards4Wrapper .card-4:last-child,
+        div.cards4Wrapper .card-5:last-child,
+        div.cards4Wrapper .card-6:last-child,
+        div.cards4Wrapper .card-7:last-child,
+        div.cards4Wrapper .card-8:last-child,
+        div.cards4Wrapper .card-9:last-child,
+        div.cards4Wrapper .card-10:last-child,
+        div.cards4Wrapper .card-11:last-child,
+        div.cards4Wrapper .card-12:last-child,
+        div.cards4Wrapper .card-13:last-child,
+        div.cards4Wrapper .card-14:last-child,
+        div.cards4Wrapper .card-15:last-child,
+        div.cards4Wrapper .card-16:last-child,
+        div.cards4Wrapper .card-17:last-child,
+        div.cards4Wrapper .card-18:last-child,
+        div.cards4Wrapper .card-19:last-child,
+        div.cards4Wrapper .card-20:last-child,
+        div.cards4Wrapper .card-21:last-child,
+        div.cards4Wrapper .card-22:last-child,
+        div.cards4Wrapper .card-23:last-child,
+        div.cards4Wrapper .card-24:last-child {
+          margin-right: 0; }
+        div.cards4Wrapper .card-1 h5,
+        div.cards4Wrapper .card-2 h5,
+        div.cards4Wrapper .card-3 h5,
+        div.cards4Wrapper .card-4 h5,
+        div.cards4Wrapper .card-5 h5,
+        div.cards4Wrapper .card-6 h5,
+        div.cards4Wrapper .card-7 h5,
+        div.cards4Wrapper .card-8 h5,
+        div.cards4Wrapper .card-9 h5,
+        div.cards4Wrapper .card-10 h5,
+        div.cards4Wrapper .card-11 h5,
+        div.cards4Wrapper .card-12 h5,
+        div.cards4Wrapper .card-13 h5,
+        div.cards4Wrapper .card-14 h5,
+        div.cards4Wrapper .card-15 h5,
+        div.cards4Wrapper .card-16 h5,
+        div.cards4Wrapper .card-17 h5,
+        div.cards4Wrapper .card-18 h5,
+        div.cards4Wrapper .card-19 h5,
+        div.cards4Wrapper .card-20 h5,
+        div.cards4Wrapper .card-21 h5,
+        div.cards4Wrapper .card-22 h5,
+        div.cards4Wrapper .card-23 h5,
+        div.cards4Wrapper .card-24 h5 {
+          font-size: 1.375em;
+          line-height: 1.18182; } }
+    div.cards4Wrapper .card-1:hover,
+    div.cards4Wrapper .card-2:hover,
+    div.cards4Wrapper .card-3:hover,
+    div.cards4Wrapper .card-4:hover,
+    div.cards4Wrapper .card-5:hover,
+    div.cards4Wrapper .card-6:hover,
+    div.cards4Wrapper .card-7:hover,
+    div.cards4Wrapper .card-8:hover,
+    div.cards4Wrapper .card-9:hover,
+    div.cards4Wrapper .card-10:hover,
+    div.cards4Wrapper .card-11:hover,
+    div.cards4Wrapper .card-12:hover,
+    div.cards4Wrapper .card-13:hover,
+    div.cards4Wrapper .card-14:hover,
+    div.cards4Wrapper .card-15:hover,
+    div.cards4Wrapper .card-16:hover,
+    div.cards4Wrapper .card-17:hover,
+    div.cards4Wrapper .card-18:hover,
+    div.cards4Wrapper .card-19:hover,
+    div.cards4Wrapper .card-20:hover,
+    div.cards4Wrapper .card-21:hover,
+    div.cards4Wrapper .card-22:hover,
+    div.cards4Wrapper .card-23:hover,
+    div.cards4Wrapper .card-24:hover {
+      height: 1100px; }
+
+.lastCard {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .lastCard:last-child {
+    margin-right: 0; }
+
+div.bottomCard {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  padding: 0; }
+  div.bottomCard span.meaning a {
+    font-size: .75em;
+    text-decoration: underline;
+    text-align: right; }
+  div.bottomCard h5 {
+    margin: 0;
+    padding: 0em 0em 1em 0em;
+    text-align: right; }
+
+.back {
+  position: absolute;
+  top: 1em;
+  left: 0em;
+  z-index: 200;
+  width: 100%;
+  opacity: 0;
+  font-size: 1.25em;
+  line-height: 1.5;
+  font-weight: 700;
+  padding: 1em 1em 1em 1em; }
+  .back:hover {
+    display: block;
+    color: black;
+    opacity: 100; }
+
+p.define {
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  padding: .25em 0em; }
+
+span.bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 900; }
+
+.regularText {
+  font-family: "Lato", sans-serif;
+  font-weight: 400; }
 
 .card-1 {
-  background-image: -webkit-radial-gradient(6em 8em, ellipse farthest-corner, transparent 30%, #F39200 100%), url("../imgs/bk-fool-80.jpg");
-  background-image: radial-gradient(ellipse farthest-corner at 6em 8em, transparent 30%, #F39200 100%), url("../imgs/bk-fool-80.jpg"); }
+  background-image: url("../imgs/sk1-fool.svg"), -webkit-radial-gradient(6em 8em, ellipse farthest-corner, transparent 30%, #F39200 100%), url("../imgs/bk-fool-80.jpg");
+  background-image: url("../imgs/sk1-fool.svg"), radial-gradient(ellipse farthest-corner at 6em 8em, transparent 30%, #F39200 100%), url("../imgs/bk-fool-80.jpg"); }
+  .card-1:hover {
+    background-image: url(" "), -webkit-radial-gradient(6em 8em, ellipse farthest-corner, transparent 0%, #F39200 100%), url(" ");
+    background-image: url(" "), radial-gradient(ellipse farthest-corner at 6em 8em, transparent 0%, #F39200 100%), url(" "); }
 
 .card-2 {
-  background-image: -webkit-radial-gradient(6em 9em, ellipse farthest-corner, transparent 30%, #371b4d 100%), url("../imgs/bk-magician-80.jpg");
-  background-image: radial-gradient(ellipse farthest-corner at 6em 9em, transparent 30%, #371b4d 100%), url("../imgs/bk-magician-80.jpg"); }
+  background-image: url("../imgs/sk1-magician.svg"), -webkit-radial-gradient(6em 9em, ellipse farthest-corner, transparent 30%, #371b4d 100%), url("../imgs/bk-magician-80.jpg");
+  background-image: url("../imgs/sk1-magician.svg"), radial-gradient(ellipse farthest-corner at 6em 9em, transparent 30%, #371b4d 100%), url("../imgs/bk-magician-80.jpg"); }
+  .card-2:hover {
+    background-image: url(" "), -webkit-radial-gradient(6em 25em, ellipse farthest-corner, transparent 0%, #371b4d 100%), url(" ");
+    background-image: url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, #371b4d 100%), url(" "); }
 
 .card-3 {
-  background-image: -webkit-radial-gradient(6em 9em, ellipse farthest-corner, transparent 40%, #80B1A1 100%), url("../imgs/bk-priestess-80.jpg");
-  background-image: radial-gradient(ellipse farthest-corner at 6em 9em, transparent 40%, #80B1A1 100%), url("../imgs/bk-priestess-80.jpg");
-  background-position: left, bottom; }
+  background-image: url("../imgs/sk1-priestess.svg"), -webkit-radial-gradient(6em 9em, ellipse farthest-corner, transparent 40%, #80B1A1 100%), url("../imgs/bk-priestess-80.jpg");
+  background-image: url("../imgs/sk1-priestess.svg"), radial-gradient(ellipse farthest-corner at 6em 9em, transparent 40%, #80B1A1 100%), url("../imgs/bk-priestess-80.jpg"); }
+  .card-3:hover {
+    background-image: url(" "), -webkit-radial-gradient(6em 25em, ellipse farthest-corner, transparent 0%, #80B1A1 100%), url(" ");
+    background-image: url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, #80B1A1 100%), url(" "); }
 
 .card-4 {
-  background-image: -webkit-radial-gradient(6em 9em, ellipse farthest-corner, transparent 40%, #371b4d 100%), url("../imgs/bk-empress-80.jpg");
-  background-image: radial-gradient(ellipse farthest-corner at 6em 9em, transparent 40%, #371b4d 100%), url("../imgs/bk-empress-80.jpg");
+  background-image: url("../imgs/sk1-empress.svg"), -webkit-radial-gradient(6em 9em, ellipse farthest-corner, transparent 40%, #371b4d 100%), url("../imgs/bk-empress-80.jpg");
+  background-image: url("../imgs/sk1-empress.svg"), radial-gradient(ellipse farthest-corner at 6em 9em, transparent 40%, #371b4d 100%), url("../imgs/bk-empress-80.jpg");
   background-position: right, bottom; }
+  .card-4:hover {
+    background-image: url(" "), -webkit-radial-gradient(6em 25em, ellipse farthest-corner, transparent 0%, #371b4d 100%), url(" ");
+    background-image: url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, #371b4d 100%), url(" "); }
 
 .card-5 {
-  background-image: -webkit-radial-gradient(transparent 40%, #19D8F2 100%), url("../imgs/bk-emperor-80.jpg");
-  background-image: radial-gradient(transparent 40%, #19D8F2 100%), url("../imgs/bk-emperor-80.jpg"); }
+  background-image: url("../imgs/sk1-emperor.svg"), -webkit-radial-gradient(transparent 40%, #19D8F2 100%), url("../imgs/bk-emperor-80.jpg");
+  background-image: url("../imgs/sk1-emperor.svg"), radial-gradient(transparent 40%, #19D8F2 100%), url("../imgs/bk-emperor-80.jpg"); }
+  .card-5:hover {
+    background-image: url(" "), -webkit-radial-gradient(6em 25em, ellipse farthest-corner, transparent 0%, #19D8F2 100%), url(" ");
+    background-image: url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, #19D8F2 100%), url(" "); }
 
 .card-6 {
-  background-image: -webkit-radial-gradient(transparent 20%, #666600 100%), url("../imgs/bk-heirophant-80.jpg");
-  background-image: radial-gradient(transparent 20%, #666600 100%), url("../imgs/bk-heirophant-80.jpg"); }
+  background-image: url("../imgs/sk1-hierophant.svg"), -webkit-radial-gradient(transparent 20%, #666600 100%), url("../imgs/bk-heirophant-80.jpg");
+  background-image: url("../imgs/sk1-hierophant.svg"), radial-gradient(transparent 20%, #666600 100%), url("../imgs/bk-heirophant-80.jpg"); }
+  .card-6:hover {
+    background-image: url(" "), -webkit-radial-gradient(6em 25em, ellipse farthest-corner, transparent 0%, #666600 100%), url(" ");
+    background-image: url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, #666600 100%), url(" "); }
 
 .card-6 img {
   width: 85%;
   margin-left: 1em; }
 
 .card-7 {
-  background-image: -webkit-radial-gradient(transparent 10%, #8A44C0 100%), url("../imgs/bk-lover-80.jpg");
-  background-image: radial-gradient(transparent 10%, #8A44C0 100%), url("../imgs/bk-lover-80.jpg");
+  background-image: url("../imgs/sk1-lovers.svg"), -webkit-radial-gradient(transparent 10%, #8A44C0 100%), url("../imgs/bk-lover-80.jpg");
+  background-image: url("../imgs/sk1-lovers.svg"), radial-gradient(transparent 10%, #8A44C0 100%), url("../imgs/bk-lover-80.jpg");
   background-position: center, bottom; }
+  .card-7:hover {
+    background-image: url(" "), -webkit-radial-gradient(6em 25em, ellipse farthest-corner, transparent 0%, #8A44C0 100%), url(" ");
+    background-image: url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, #8A44C0 100%), url(" "); }
 
 .card-8 {
-  background-image: -webkit-radial-gradient(transparent 40%, #A8E2C0 100%), url("../imgs/bk-chariot-80.jpg");
-  background-image: radial-gradient(transparent 40%, #A8E2C0 100%), url("../imgs/bk-chariot-80.jpg");
+  background-image: url("../imgs/sk1-chariot.svg"), -webkit-radial-gradient(transparent 40%, #A8E2C0 100%), url("../imgs/bk-chariot-80.jpg");
+  background-image: url("../imgs/sk1-chariot.svg"), radial-gradient(transparent 40%, #A8E2C0 100%), url("../imgs/bk-chariot-80.jpg");
   background-position: center, bottom; }
+  .card-8:hover {
+    background-image: url(" "), -webkit-radial-gradient(6em 25em, ellipse farthest-corner, transparent 0%, #A8E2C0 100%), url(" ");
+    background-image: url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, #A8E2C0 100%), url(" "); }
 
 .card-9 {
-  background-image: -webkit-radial-gradient(9em 13.75em, ellipse farthest-corner, transparent 40%, #ED1C24 100%), url("../imgs/bk-strength-80.jpg");
-  background-image: radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, #ED1C24 100%), url("../imgs/bk-strength-80.jpg"); }
+  background-image: url("../imgs/sk1-strength.svg"), -webkit-radial-gradient(9em 13.75em, ellipse farthest-corner, transparent 40%, #ED1C24 100%), url("../imgs/bk-strength-80.jpg");
+  background-image: url("../imgs/sk1-strength.svg"), radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, #ED1C24 100%), url("../imgs/bk-strength-80.jpg"); }
+  .card-9:hover {
+    background-image: url(" "), -webkit-radial-gradient(6em 25em, ellipse farthest-corner, transparent 0%, #ED1C24 100%), url(" ");
+    background-image: url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, #ED1C24 100%), url(" "); }
 
 .card-10 {
-  background-image: -webkit-radial-gradient(transparent 20%, #174427 100%), url("../imgs/bk-hermit-80.jpg");
-  background-image: radial-gradient(transparent 20%, #174427 100%), url("../imgs/bk-hermit-80.jpg"); }
+  background-image: url("../imgs/sk1-hermit.svg"), -webkit-radial-gradient(transparent 20%, #174427 100%), url("../imgs/bk-hermit-80.jpg");
+  background-image: url("../imgs/sk1-hermit.svg"), radial-gradient(transparent 20%, #174427 100%), url("../imgs/bk-hermit-80.jpg"); }
+  .card-10:hover {
+    background-image: url(" "), -webkit-radial-gradient(6em 25em, ellipse farthest-corner, transparent 0%, #174427 100%), url(" ");
+    background-image: url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, #174427 100%), url(" "); }
 
 .card-11 {
-  background-image: -webkit-radial-gradient(transparent 20%, #8A44C0 100%), url("../imgs/bk-wheel-80.jpg");
-  background-image: radial-gradient(transparent 20%, #8A44C0 100%), url("../imgs/bk-wheel-80.jpg");
+  background-image: url("../imgs/sk1-wheel.svg"), -webkit-radial-gradient(transparent 20%, #8A44C0 100%), url("../imgs/bk-wheel-80.jpg");
+  background-image: url("../imgs/sk1-wheel.svg"), radial-gradient(transparent 20%, #8A44C0 100%), url("../imgs/bk-wheel-80.jpg");
   background-position: center, bottom; }
+  .card-11:hover {
+    background-image: url(" "), -webkit-radial-gradient(6em 25em, ellipse farthest-corner, transparent 0%, #8A44C0 100%), url(" ");
+    background-image: url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, #8A44C0 100%), url(" "); }
 
 .card-12 {
-  background-image: -webkit-radial-gradient(9em 13.75em, ellipse farthest-corner, transparent 30%, #A8E2C0 100%), url("../imgs/bk-justice-80.jpg");
-  background-image: radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 30%, #A8E2C0 100%), url("../imgs/bk-justice-80.jpg");
+  background-image: url("../imgs/sk1-justice.svg"), -webkit-radial-gradient(9em 13.75em, ellipse farthest-corner, transparent 30%, #A8E2C0 100%), url("../imgs/bk-justice-80.jpg");
+  background-image: url("../imgs/sk1-justice.svg"), radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 30%, #A8E2C0 100%), url("../imgs/bk-justice-80.jpg");
   background-position: center, bottom; }
+  .card-12:hover {
+    background-image: url(" "), -webkit-radial-gradient(6em 25em, ellipse farthest-corner, transparent 0%, #A8E2C0 100%), url(" ");
+    background-image: url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, #A8E2C0 100%), url(" "); }
 
 .card-13 {
-  background-image: -webkit-radial-gradient(transparent 20%, #613a00 100%), url("../imgs/bk-hangedMan-80.jpg");
-  background-image: radial-gradient(transparent 20%, #613a00 100%), url("../imgs/bk-hangedMan-80.jpg"); }
+  background-image: url("../imgs/sk1-hangedMan.svg"), -webkit-radial-gradient(transparent 20%, #613a00 100%), url("../imgs/bk-hangedMan-80.jpg");
+  background-image: url("../imgs/sk1-hangedMan.svg"), radial-gradient(transparent 20%, #613a00 100%), url("../imgs/bk-hangedMan-80.jpg"); }
+  .card-13:hover {
+    background-image: url(" "), -webkit-radial-gradient(6em 25em, ellipse farthest-corner, transparent 0%, #613a00 100%), url(" ");
+    background-image: url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, #613a00 100%), url(" "); }
 
 .card-14 {
-  background-image: -webkit-radial-gradient(transparent 20%, #371b4d 100%), url("../imgs/bk-death-80.jpg");
-  background-image: radial-gradient(transparent 20%, #371b4d 100%), url("../imgs/bk-death-80.jpg"); }
+  background-image: url("../imgs/sk1-death.svg"), -webkit-radial-gradient(transparent 20%, #371b4d 100%), url("../imgs/bk-death-80.jpg");
+  background-image: url("../imgs/sk1-death.svg"), radial-gradient(transparent 20%, #371b4d 100%), url("../imgs/bk-death-80.jpg"); }
+  .card-14:hover {
+    background-image: url(" "), -webkit-radial-gradient(6em 25em, ellipse farthest-corner, transparent 0%, #371b4d 100%), url(" ");
+    background-image: url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, #371b4d 100%), url(" "); }
 
 .card-15 {
-  background-image: -webkit-radial-gradient(transparent 20%, #80B1A1 100%), url("../imgs/bk-temperance-80.jpg");
-  background-image: radial-gradient(transparent 20%, #80B1A1 100%), url("../imgs/bk-temperance-80.jpg");
+  background-image: url("../imgs/sk1-temperance.svg"), -webkit-radial-gradient(transparent 20%, #80B1A1 100%), url("../imgs/bk-temperance-80.jpg");
+  background-image: url("../imgs/sk1-temperance.svg"), radial-gradient(transparent 20%, #80B1A1 100%), url("../imgs/bk-temperance-80.jpg");
   background-position: center, bottom; }
+  .card-15:hover {
+    background-image: url(" "), -webkit-radial-gradient(6em 25em, ellipse farthest-corner, transparent 0%, #80B1A1 100%), url(" ");
+    background-image: url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, #80B1A1 100%), url(" "); }
 
 .card-16 {
-  background-image: -webkit-radial-gradient(6em 6em, ellipse closest-corner, transparent 70%, #F2DD98 100%), url("../imgs/bk-devil-80.jpg");
-  background-image: radial-gradient(ellipse closest-corner at 6em 6em, transparent 70%, #F2DD98 100%), url("../imgs/bk-devil-80.jpg");
+  background-image: url("../imgs/sk1-devil.svg"), -webkit-radial-gradient(6em 6em, ellipse closest-corner, transparent 70%, #F2DD98 100%), url("../imgs/bk-devil-80.jpg");
+  background-image: url("../imgs/sk1-devil.svg"), radial-gradient(ellipse closest-corner at 6em 6em, transparent 70%, #F2DD98 100%), url("../imgs/bk-devil-80.jpg");
   background-position: center, bottom; }
+  .card-16:hover {
+    background-image: url(" "), -webkit-radial-gradient(6em 25em, ellipse farthest-corner, transparent 0%, #F2DD98 100%), url(" ");
+    background-image: url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, #F2DD98 100%), url(" "); }
 
 .card-17 {
-  background-image: -webkit-radial-gradient(6em 9em, ellipse farthest-corner, transparent 30%, #80B1A1 100%), url("../imgs/bk-tower-80.jpg");
-  background-image: radial-gradient(ellipse farthest-corner at 6em 9em, transparent 30%, #80B1A1 100%), url("../imgs/bk-tower-80.jpg"); }
+  background-image: url("../imgs/sk1-tower.svg"), -webkit-radial-gradient(6em 9em, ellipse farthest-corner, transparent 30%, #80B1A1 100%), url("../imgs/bk-tower-80.jpg");
+  background-image: url("../imgs/sk1-tower.svg"), radial-gradient(ellipse farthest-corner at 6em 9em, transparent 30%, #80B1A1 100%), url("../imgs/bk-tower-80.jpg"); }
+  .card-17:hover {
+    background-image: url(" "), -webkit-radial-gradient(6em 25em, ellipse farthest-corner, transparent 0%, #80B1A1 100%), url(" ");
+    background-image: url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, #80B1A1 100%), url(" "); }
 
 .card-18 {
-  background-image: -webkit-radial-gradient(9em 13.75em, ellipse farthest-corner, transparent 40%, #58103f 100%), url("../imgs/bk-star-80.jpg");
-  background-image: radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, #58103f 100%), url("../imgs/bk-star-80.jpg"); }
+  background-image: url("../imgs/sk1-star.svg"), -webkit-radial-gradient(9em 13.75em, ellipse farthest-corner, transparent 40%, #58103f 100%), url("../imgs/bk-star-80.jpg");
+  background-image: url("../imgs/sk1-star.svg"), radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, #58103f 100%), url("../imgs/bk-star-80.jpg"); }
+  .card-18:hover {
+    background-image: url(" "), -webkit-radial-gradient(6em 25em, ellipse farthest-corner, transparent 0%, #58103f 100%), url(" ");
+    background-image: url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, #58103f 100%), url(" "); }
 
 .card-19 {
-  background-image: -webkit-radial-gradient(9em 13.75em, ellipse farthest-corner, transparent 40%, #8A44C0 100%), url("../imgs/bk-moon-80.jpg");
-  background-image: radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, #8A44C0 100%), url("../imgs/bk-moon-80.jpg");
+  background-image: url("../imgs/sk1-moon.svg"), -webkit-radial-gradient(9em 13.75em, ellipse farthest-corner, transparent 40%, #8A44C0 100%), url("../imgs/bk-moon-80.jpg");
+  background-image: url("../imgs/sk1-moon.svg"), radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, #8A44C0 100%), url("../imgs/bk-moon-80.jpg");
   background-position: center, bottom; }
+  .card-19:hover {
+    background-image: url(" "), -webkit-radial-gradient(6em 25em, ellipse farthest-corner, transparent 0%, #8A44C0 100%), url(" ");
+    background-image: url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, #8A44C0 100%), url(" "); }
 
 .card-20 {
-  background-image: -webkit-radial-gradient(9em 13.75em, ellipse farthest-corner, transparent 40%, #A8E2C0 100%), url("../imgs/bk-sun-80.jpg");
-  background-image: radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, #A8E2C0 100%), url("../imgs/bk-sun-80.jpg");
+  background-image: url("../imgs/sk1-sun.svg"), -webkit-radial-gradient(9em 13.75em, ellipse farthest-corner, transparent 40%, #A8E2C0 100%), url("../imgs/bk-sun-80.jpg");
+  background-image: url("../imgs/sk1-sun.svg"), radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, #A8E2C0 100%), url("../imgs/bk-sun-80.jpg");
   background-position: center, bottom; }
+  .card-20:hover {
+    background-image: url(" "), -webkit-radial-gradient(6em 25em, ellipse farthest-corner, transparent 0%, #A8E2C0 100%), url(" ");
+    background-image: url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, #A8E2C0 100%), url(" "); }
 
 .card-21 {
-  background-image: -webkit-radial-gradient(9em 13.75em, ellipse farthest-corner, transparent 40%, #ED1C24 100%), url("../imgs/bk-judgement-80.jpg");
-  background-image: radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, #ED1C24 100%), url("../imgs/bk-judgement-80.jpg"); }
+  background-image: url("../imgs/sk1-judgement.svg"), -webkit-radial-gradient(9em 13.75em, ellipse farthest-corner, transparent 40%, #ED1C24 100%), url("../imgs/bk-judgement-80.jpg");
+  background-image: url("../imgs/sk1-judgement.svg"), radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, #ED1C24 100%), url("../imgs/bk-judgement-80.jpg"); }
+  .card-21:hover {
+    background-image: url(" "), -webkit-radial-gradient(6em 25em, ellipse farthest-corner, transparent 0%, #ED1C24 100%), url(" ");
+    background-image: url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, #ED1C24 100%), url(" "); }
 
 .card-22 {
-  background-image: -webkit-radial-gradient(9em 13.75em, ellipse farthest-corner, transparent 40%, #174427 100%), url("../imgs/bk-world-80.jpg");
-  background-image: radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, #174427 100%), url("../imgs/bk-world-80.jpg"); }
+  background-image: url("../imgs/sk1-world.svg"), -webkit-radial-gradient(9em 13.75em, ellipse farthest-corner, transparent 40%, #174427 100%), url("../imgs/bk-world-80.jpg");
+  background-image: url("../imgs/sk1-world.svg"), radial-gradient(ellipse farthest-corner at 9em 13.75em, transparent 40%, #174427 100%), url("../imgs/bk-world-80.jpg"); }
+  .card-22:hover {
+    background-image: url(" "), -webkit-radial-gradient(6em 25em, ellipse farthest-corner, transparent 0%, #174427 100%), url(" ");
+    background-image: url(" "), radial-gradient(ellipse farthest-corner at 6em 25em, transparent 0%, #174427 100%), url(" "); }
 
 /*# sourceMappingURL=app.css.map */
